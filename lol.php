@@ -8,5 +8,5 @@ img {
   }
 </style>
 <section>
-  <img src="brush_golden.jpg />
+  <img src="brush_golden.jpg" />
 </section>
