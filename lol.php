@@ -1,6 +1,7 @@
 <style>
 section {
    background:  #363636;
+   padding: 50px;
    }
 img {
   width: 100%;
