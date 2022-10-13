@@ -69,7 +69,7 @@ $(document).ready(function(){
 
 
 // ---------------------------- Suporte aos browsers IE ---------------------------------- //     
-    var sBrowser, sUsrAg = navigator.userAgent;
+  /*  var sBrowser, sUsrAg = navigator.userAgent;
 
     if (sUsrAg.indexOf("Trident") > -1) {
         sBrowser = "Microsoft Internet Explorer / Microsoft Edge";
@@ -88,7 +88,7 @@ $(document).ready(function(){
         $('#code_desenhoCSS').addClass('-ms-desenhoCSS');
         $('.aquamask h8').addClass('-ms-aquamask-h8'); 
         $('.tomato h8').addClass('-ms-tomato-h8');
-    }
+    } */
 
 })
 
