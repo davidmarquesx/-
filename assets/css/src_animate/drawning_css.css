@@ -4,7 +4,7 @@
     height: 280px;
     position: relative;   
     margin-bottom: 15%;
-    filter: contrast(1.4) brightness(0.9);
+    filter: contrast(1.25) brightness(0.9);
 }
 #puppet {
     width: 164px;
