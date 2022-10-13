@@ -133,6 +133,15 @@ i {
   100%{ transform: scale(1.2); opacity: 0; }
 }
 
+@media(max-device-width: 1024px) {
+	section {
+	   animation: fadeOut 1s ease-in-out; 
+	}		
+	.page-fix { 
+	  animation: fadeIn 1s ease-in-out; 
+	}
+}
+
 
 /* classes adicionais */
 .align-left {
