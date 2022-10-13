@@ -185,6 +185,9 @@
 		padding: 15px 100%;
 		font-size: 2.25rem;
 	}
+	.navbar .collapse-in .menu li a {
+		font-color: #fff;
+	}
 	.navbar .menu li a:hover {
 		background: #151f20;
 	}	
