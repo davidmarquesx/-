@@ -21,7 +21,9 @@
 }
 
 #tomato #element #topknot {
-    mix-blend-mode: multiply;    
+    mix-blend-mode: multiply; 
+    -webkit-mix-blend-mode: multiply;
+    -moz-mix-blend-mode: multiply;
     position: relative;
     display: flex;
     justify-content: center;
@@ -122,7 +124,8 @@
         grid-template-columns: 75% 25%;
     }
     #tomato #element #eyes .eyeball {
-        width: auto;
+       /* width: auto;*/
+        width: 25%;
         height: 80%;
     }
     #tomato button {
