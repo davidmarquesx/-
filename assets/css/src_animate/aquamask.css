@@ -1,0 +1,96 @@
+/* ---Aquamask--- */
+#aquamask svg {    
+    display: block;
+    cursor: none;
+    width: 100%;
+    height: 270px; 
+    position: relative;
+    top: -20px;
+}
+#aquamask svg:nth-child(2) { 
+    transform: scale(1.05);
+    position: absolute;
+    opacity: 0;
+    animation: inflate 2s ease-out infinite;
+} 
+#aquamask svg image {
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+}
+#aquamask svg #cursor #mask-circle {
+    clip-path: circle(50% at 50% 50%);
+    animation: aquamask 2s ease-out infinite;
+}
+
+.aquamaskMove {     
+    position: relative;
+    animation: aquamaskMove 24s 2s infinite !important;
+}
+    @keyframes aquamaskMove { 
+        10% {cx:250;cy:150;}
+        20% {cx:270;cy:50;}
+        30% {cx:440;cy:150;}
+        40% {cx:245;cy:240;}
+        50% {cx:50;cy:160;}
+        60% {cx:270;cy:50;}
+        70% {cx:50;cy:160;}
+        80% {cx:440;cy:150;}
+        90% {cx:245;cy:240;}
+    }
+
+@keyframes inflate {
+    50% { transform: scale(1); }
+}
+
+@keyframes aquamask {
+    0% { transform: scale(1) ; }
+    50% { transform: scale(1.05) translate(-4%); }
+    100% { transform: scale(1); }
+}
+
+#aquamask .ms-explorer {
+    display: none;
+}
+
+
+@media all and (min-width: 1367px){
+    #aquamask svg {
+        width: 100%;
+        height: 275px;
+    }
+}
+
+@media all and (min-width: 1600px){
+    #aquamask svg {    
+        width: 100%;
+        height: 320px;
+    }
+}
+
+@media all and (max-width: 1200px){
+    #aquamask svg {    
+        width: 100%;
+        height: 320px;
+    }
+}
+
+@media all and (max-width: 840px){
+    #aquamask svg {    
+        width: 100%;
+        height: 370px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    #aquamask svg {    
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media all and (max-width: 360px){
+    #aquamask svg image {
+        transform: scale(1.35);
+    }
+}

@@ -1,0 +1,187 @@
+/* ---Tomato--- */
+#tomato {
+    background: url('../../img/base/scanline.png') #009688;
+    display: grid;
+    grid-template-columns: 72% 28%;
+}
+#tomato #element {
+    width: 100%;
+    height: 100%;
+    background: url('../../img/tomato/canvas.svg') no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: grid;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    position: relative;
+    animation: float 1.4s infinite ease-out;
+}
+@keyframes float {
+    50% { height: 102%; }
+    100% { height: 100%; }
+}
+
+#tomato #element #topknot {
+    mix-blend-mode: multiply;    
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+#tomato #element #topknot img {
+    position: absolute;
+    bottom: -10px;
+}
+#tomato #element #eyes .eyeball {
+    width: 20%;
+    height: 80%;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    background: #d0734f;
+}
+#tomato #element #eyes .eyeball img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+}
+#tomato #element #eyes .eyeball.left {
+   left: -5px;
+}
+#tomato #element #eyes .eyeball.right {
+    left: 14px;
+}
+#tomato #element #mouth img {
+    width: 100px;
+    height: auto;
+    position: absolute;
+}
+#tomato #element #mouth img#item2 {
+    margin-top: -15px;
+}
+#tomato #element #mouth img#item6 {
+    margin-top: -30px;
+}
+#tomato #panel {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-gap: 4px;
+    padding: 10px 2px 50%;
+    background: #044843;
+}
+#tomato #panel .thumbnail {    
+    border: 1px solid #7fffd4;
+    border-radius: 3px;
+}
+#tomato #panel .thumbnail img {
+    cursor: grabbing;
+    width: 100%;
+    height: auto;
+}
+#tomato button {
+    border: 1px solid #607D8B;
+    border-radius: 4px;
+    background: #cacaca; 
+    padding: 7px 10px; 
+    font-size: 1rem;  
+    cursor: pointer;
+    position: absolute;  
+    top: unset;
+    bottom: 5%;
+    right: 7%;
+}
+
+
+@media all and (min-width: 1440px){
+    #tomato button {
+        padding: 7px 10px;
+        bottom: 15px;
+    }
+}
+
+@media all and (max-width: 1200px){
+    #tomato button {
+        padding: 10px 12px; 
+        font-size: 1.2rem;  
+    }
+}
+
+@media all and (max-width: 1024px){
+    #tomato button {
+        width: 28%;
+        height: auto;
+        padding: 7px 38px;
+        bottom: 2%;
+        right: 1px;
+        
+    }
+}
+
+@media all and (max-width: 840px){
+    #tomato {
+        grid-template-columns: 75% 25%;
+    }
+    #tomato #element #eyes .eyeball {
+        width: auto;
+        height: 80%;
+    }
+    #tomato button {
+        width: 25%;
+        height: auto;
+    }
+}
+
+
+@media all and (max-width: 749px){
+    #tomato #element {
+        top: -10px;
+    }
+    #tomato #panel .thumbnail img {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+
+@media all and (max-width: 480px){
+    #tomato {
+        width: 100%;
+        height: 370px;
+        grid-template-columns: 100%;
+        grid-template-rows: 80% 20%;
+    }
+    #tomato #element {
+        top: 2px;
+    }
+    #tomato #panel {
+        grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+        grid-template-rows: auto;
+        height: auto;
+        padding: 15px;        
+        justify-content: center;
+        z-index: 1;
+    }
+    #tomato #panel .thumbnail {
+        margin-top: -5px;
+    }
+    #tomato #panel .thumbnail img {
+        width: 100%;
+        height: 100%;
+    }
+    #tomato button {
+        width: auto;
+        height: auto;
+        position: absolute;
+        padding: 5px 7px;
+        top: 5px;
+        right: 5px;
+        bottom: unset;
+    }
+}
+
+@media all and (max-width: 320px){
+    #tomato {
+        width: 100%;
+        height: 280px;
+    }
+}

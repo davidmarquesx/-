@@ -1,0 +1,128 @@
+
+section#galeria {
+    background: #2c2c2c;
+}
+section#galeria p {
+    font-size: 1.25rem;
+    margin: 30px 0 15px;
+    font-weight: 100;
+}
+section#galeria .readmore {
+    display: none;
+    cursor: pointer;
+}
+
+.grid-column {
+    flex: 25%;
+    max-width: 25%;
+    overflow: hidden;
+} 
+.grid-column img {
+    transform: translate(0%, 0%);
+    transition: transform 0.4s ease-in-out;    
+    padding: 1px;
+
+    vertical-align: middle;
+    position: relative;  
+    width: 100%;    
+}
+.grid-column img:hover {
+    transform: scale(1.3);
+    
+}
+.grid-column img.gif {
+    clip-path: inset(0% 8px 0% 0%); 
+    width: 101.7%; 
+}
+
+
+
+@media all and (max-width: 1024px) {
+  section#galeria .readmore {
+      display: block;
+  }
+  .grid-column {
+      flex: 33.3%;
+      max-width: 33.3%;
+  }
+  .grid-column:nth-child(4) {
+      display: none;               
+  }
+  .grid-column:nth-child(4) img {
+      opacity: 0; 
+  }  
+  .grid-column:nth-child(3).add-col {
+      display: block;
+  }
+  .grid-column:nth-child(4).add-col {
+      display: contents;
+      flex: 100%;
+      max-width: 100%;      
+  }
+  .grid-column:nth-child(4).add-col img {
+      width: 33.3%;
+      height: auto;       
+      top: -40px;
+      opacity: 1;
+      animation: gridfadeIn 1s linear;    
+  }
+}
+
+
+@media all and (max-width: 840px) and (orientation: portrait) {
+  section#galeria .readmore {
+      display: block;
+  }
+  .grid-column {
+      flex: 50%;
+      max-width: 50%;
+  }
+  .grid-column:nth-child(n+3) {
+      display: none;
+  }
+  .grid-column:nth-child(n+3) img {
+     opacity: 0;
+  }
+  .grid-column:nth-child(4) img:last-child {
+      height: 20%;
+  }
+  .grid-column.add-col {
+      display: block !important;
+      flex: 50% !important;
+      max-width: 50% !important;      
+  }
+  .grid-column.add-col img {
+      width: 100% !important;
+      height: auto !important;
+      top: 0;
+      opacity: 1;
+      animation: gridfadeIn 1s linear;
+  }    
+}
+
+@keyframes gridfadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
+  }
+
+/*
+@media all and (max-device-width: 740px) {
+  .testimonial .card-image {
+    justify-content: center;
+  }
+  .testimonial .card-image img {
+    transform: scale(1.2);
+    padding-bottom: 30px;
+  }
+  .testimonial .card-image img.vertical {
+    margin-left: 0;
+  }
+}*/
+
+@media all and (max-width: 320px) {
+    .grid-column, .grid-column.add-col {
+      flex: 100% !important;
+      max-width: 100% !important; 
+  }
+}
+

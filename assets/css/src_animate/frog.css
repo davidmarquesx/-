@@ -1,0 +1,131 @@
+/* ---Frog--- */
+#frog {
+    background: linear-gradient(to bottom, #97c5a9 45%, #4d8a65 92%, #0e5852 100%);
+    display: flex;
+    justify-content: center;
+}
+
+#frog #avatar  {
+    width: 190px;
+    height: 160px;
+    background: url('../../img/frog/elm-normal.png');
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+    background-position-y: bottom !important;
+    filter: brightness(0.9);
+    transition: all .2s linear;
+    position: absolute;
+    bottom: 0;
+}
+#frog #relva {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: rotateX(180deg);
+    position: absolute;
+}
+#frog #relva .content {
+    height: 100%;
+    display: flex;
+}
+@keyframes wing {
+    0% { margin-left: 0; }
+    50% { margin-left: 1px; }
+    100% { margin-left: 0; }
+}
+#frog #relva .content:last-child {
+    transform: rotateY(180deg);
+}
+#frog #relva .content span {
+    width: 5px;
+}
+#frog #relva .content span:nth-child(4n+1) {
+    height: 70%;    
+    background: #189243;
+}
+#frog #relva .content span:nth-child(4n+2) {
+    height: 55%;
+    background: #58a537;
+}
+#frog #relva .content span:nth-child(4n+3) {
+    height: 65%;
+    background: #7f9218;
+}
+#frog #relva .content span:nth-child(4n+4) {
+    height: 50%;
+    background: #608000;
+    margin-right: 2px;
+}
+
+
+#frog #cursor {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    transition: all .2s linear;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    position: absolute;
+    z-index: 2;
+}
+#frog #cursor .mask:nth-child(3n+1) {
+    cursor: url("../../img/frog/moska-left.png"), auto;
+}
+#frog #cursor .mask:nth-child(3n+2)  {
+    cursor: url("../../img/frog/moska-center.png"), auto;
+}
+#frog #cursor .mask:nth-child(3n+0) { 
+    cursor: url("../../img/frog/moska-right.png"), auto;
+}
+
+
+@media all and (min-width: 1600px){
+    #frog #avatar {
+        width: 230px;
+        height: 200px;
+    }
+    #frog #relva .content {
+        margin: 0 -10%;
+    }
+}
+
+@media all and (min-width: 1920px) {    
+    #frog #relva .content {
+        margin: 0 -5%;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    #frog #avatar {
+        width: 230px;
+        height: 200px;
+    }
+}
+
+@media all and (max-width: 991px) {
+    #frog #avatar {
+        width: 190px;
+        height: 160px;      
+    }
+}
+
+@media all and (max-width: 840px) {
+    #frog #avatar {
+        width: 270px;
+        height: 240px;    
+    }
+}
+
+@media all and (max-width: 767px) {
+    #frog #avatar {
+        width: 200px;
+        height: 170px;      
+    }
+}
+
+@media all and (max-width: 420px) {
+    #frog #relva .content{
+        margin: 0 -10%;
+    }
+}

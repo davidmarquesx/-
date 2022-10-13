@@ -1,0 +1,324 @@
+#drawning_css #notebook {
+    position: relative;
+    width: 450px;
+    height: 100%;
+    perspective: 100px;
+}
+#drawning_css #notebook #screen {
+    width: 370px;
+    height: 249px;
+    border: 2px solid #9ee9f8;
+    border-radius: 8px 8px 0px 0px;    
+    position: absolute;
+    top: 20px;
+}
+#drawning_css #notebook #screen #interface {  
+    width: 350px;
+    height: 225px;
+    border: 1px solid #9ee9f8;
+    background: #2b2e3b;
+    position: relative;
+    top: 9px;
+}
+#drawning_css #notebook .keybord.front {
+    width: 368px;
+    height: 24px;
+    border: 2px solid #9ee9f8;
+    transform-style: preserve-3d;
+    transform: rotateX(105deg) scale(1.108,0.8);
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    position: absolute;
+    bottom: 6px;
+}
+#drawning_css #notebook .keybord.baseline {
+    width: 446px;
+    height: 8px;
+    border: 2px solid #9feaf9;
+    border-radius: 0px 0px 6px 6px;
+    position: absolute;
+    bottom: 0;
+}
+#drawning_css #notebook #screen #interface #sphere {
+    width: 225px;
+    height: 100%;
+    border-radius: 100%;
+    transform: scale(0.95,0.85);
+    overflow: hidden;
+    background: rgb(119 136 153 / 20%);
+}
+#drawning_css #notebook #screen #interface #sphere #pathtop,  
+#drawning_css #notebook #screen #interface #sphere #pathbottom {
+    width: 100%;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;    
+}
+#drawning_css #notebook #screen #interface #sphere #pathtop {
+    background: repeating-linear-gradient(0deg, #778899, transparent 100px);
+}
+#drawning_css #notebook #screen #interface #sphere #pathbottom {
+    background: repeating-linear-gradient(180deg, #778899, transparent 115px);
+}
+#drawning_css #notebook #screen #interface #sphere #pathmiddle {
+    width: 97%;
+    height: 58px;
+    border-radius: 50%;
+    border-top: 3px solid;
+    border-bottom: 1px solid;
+    text-align: center;
+    background: radial-gradient(circle, rgba(154,154,181,1) 0%, rgba(2,0,36,1) 100%, rgba(3,37,43,1) 100%);
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    z-index: 3;
+}
+#drawning_css #notebook #screen #interface #sphere #pathmiddle .text {    
+    margin-top: -20px;
+    font-family: 'roboto';
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #c8e1c9;
+    text-shadow: 2px 1px 0 #000;
+    perspective: 600px; 
+    position: relative;
+    z-index: 1;
+
+}
+#drawning_css #notebook #screen #interface #sphere #pathmiddle .text .letter:nth-child(1) {
+    transform-style: preserve-3d;
+    transform: rotateY(-45deg) scale(1.5,1.2) translateZ(5px);
+}
+#drawning_css #notebook #screen #interface #sphere #pathmiddle .text .letter:nth-child(3) {
+    transform-style: preserve-3d;
+    transform: rotateY(45deg) scale(1.5,1.2) translateZ(5px) translateY(-3px);
+}
+#drawning_css #notebook #screen #interface #sphere #pathmiddle .text.bottom {
+    transform: rotateX(180deg) translateY(-4px);
+    opacity: .5;
+    z-index: 0;
+}
+#drawning_css #notebook #screen #interface #sphere #pathbottom {    
+    height: 115px;
+    bottom: 0;
+}
+
+
+#drawning_css .side .line {
+    position: relative;
+    border: 0.05rem solid #25A9EF;
+}
+
+
+#drawning_css .side.right-top .line.path1 {
+    width: 25px;
+    top: 65px;
+    left: -84px;
+}
+#drawning_css .side.right-top .line.path2 {
+    width: 40px;
+    top: 46px;
+    left: -70px;
+    transform: rotate(-60deg);   
+}
+#drawning_css .side.right-top .line.path3 {
+    width: 50px;
+    top: 27px;
+    left: -40px;
+}
+#drawning_css .side.right-bottom .line.path1 {
+    width: 25px;
+    top: 65px;
+    left: -84px;
+}
+#drawning_css .side.right-bottom .line.path2 {
+    width: 40px;
+    top: 46px;
+    left: -70px;
+    transform: rotate(-60deg);   
+}
+#drawning_css .side.right-bottom .line.path3 {
+    width: 50px;
+    top: 27px;
+    left: -40px;
+}
+
+
+
+
+
+#drawning_css .side {
+    position: absolute;
+    z-index: 1;
+}
+#drawning_css .side i {
+    position: relative;
+    color: #25A9EF;
+}
+#drawning_css .side i.square-icon {
+    font-size: 2.15rem;
+    padding: 5px;
+    border: 1px solid #25A9EF;
+    border-radius: 6px;
+    background: #204ECF;   
+    color: #00ffff;
+    line-height: initial;
+}
+#drawning_css .side i.square-icon.fa-tint {
+    padding: 5px 12px;
+}
+#drawning_css .side i.fa-bullseye {
+    z-index: 1;   
+}
+#drawning_css .side.left-top {
+    left: -30px;
+    top: 50px;
+}
+#drawning_css .side.left-bottom {
+    left: -25px;
+    bottom: 100px;
+}
+#drawning_css .side.right-top {
+    right: -30px;
+    top: 40px;
+}
+#drawning_css .side.right-bottom {
+    right: -25px;
+    bottom: 100px;
+}
+#drawning_css .side.left-top i.fa-bullseye {
+    left: -10px;
+    top: 10px; 
+}
+#drawning_css .side.left-top .line.path1 {
+    width: 25px;
+    top: -7px;
+    left: 54px;
+}
+#drawning_css .side.left-top .line.path2 {
+    width: 30px;
+    top: 3px;
+    left: 72px;
+    transform: rotate(60deg);    
+}
+#drawning_css .side.left-top .line.path3 {
+    width: 40px;
+    top: 14px;
+    left: 94px;
+}
+#drawning_css .side.left-bottom i.fa-bullseye {
+    left: -7px; 
+}
+#drawning_css .side.left-bottom i.fa-slash.path1 {
+    transform: scaleX(2.2) rotate(-38deg);
+    top: 1px;
+    left: 3px;
+}
+#drawning_css .side.left-bottom i.fa-slash.path2 {
+    transform: scaleY(1.7) rotate(95deg);
+    top: -11px;
+    left: 11px;
+}
+#drawning_css .side.left-bottom i.fa-slash.path3 {
+    transform: scaleX(1.3) rotate(-38deg);
+    top: -23px;
+    left: 10px;
+}
+
+#drawning_css .side.right-top i.fa-bullseye {
+    left: 8px;
+    top: 0px; 
+}
+#drawning_css .side.right-top i.fa-slash.path1 {
+    transform: scaleX(2.7) rotate(-38deg);
+    top: 0;
+    left: 33px;
+}
+#drawning_css .side.right-top i.fa-slash.path2 {
+    transform: scale(1.4) rotate(-95deg);
+    top: 11px;
+    left: -20px;
+}
+#drawning_css .side.right-top i.fa-slash.path3 {
+    transform: scaleX(2) rotate(-38deg);
+    top: 22px;
+    left: -67px;
+}
+#drawning_css .side.right-bottom i.fa-bullseye {
+    top: 3px;
+    left: 8px;
+}
+#drawning_css .side.right-bottom i.fa-slash.path1 {
+    transform: scaleX(2.7) rotate(-38deg);
+    top: -19px;
+    left: -2px;
+}
+#drawning_css .side.right-bottom i.fa-slash.path2 {
+    transform: scaleY(1.7) rotate(5deg);
+    top: -8px;
+    left: 11px;
+}
+#drawning_css .side.right-bottom i.fa-slash.path3 {
+    transform: scaleX(1.0) rotate(-38deg);
+    top: 3px;
+    left: 9px;
+}
+
+
+
+////////////////////////////////////
+
+
+<!--             
+                <div class="side left-top">
+                    <i class="square-icon fas fa-code"></i>
+                    <i class="fas fa-thin fa-bullseye"></i>
+                    <hr class="line path1"></hr>
+                    <hr class="line path2"></hr>
+                    <hr class="line path3"></hr>
+                </div>
+                <div class="side left-bottom">
+                    <i class="square-icon fas fa-tint"></i>
+                    <i class="fas fa-thin fa-bullseye"></i>
+                    <hr class="line path1"></hr>
+                    <hr class="line path2"></hr>
+                    <hr class="line path3"></hr>
+                </div>
+                <div class="side right-top">
+                    <hr class="line path1"></hr>
+                    <hr class="line path2"></hr>
+                    <hr class="line path3"></hr> 
+                    <i class="fas fa-thin fa-bullseye"></i>    
+                    <i class="square-icon fas fa-edit"></i>                              
+                </div>
+                <div class="side right-bottom">
+                    <hr class="line path1"></hr>
+                    <hr class="line path2"></hr>
+                    <hr class="line path3"></hr>
+                    <i class="fas fa-thin fa-bullseye"></i>
+                    <i class="square-icon fas fa-layer-group"></i>
+                </div>
+                <div id="notebook" class="auto-center" >
+                    <div id="screen" class="auto-center">
+                        <div id="interface" class="auto-center">
+                            <div id="sphere">
+                                <div id="pathtop"></div>
+                                <div id="pathmiddle">
+                                    <div class="text top auto-center">
+                                        <div class="letter">Devo</div>
+                                        <div class="letter">l</div>
+                                        <div class="letter">oper</div>
+                                    </div>
+                                    <div class="text bottom auto-center">
+                                        <div class="letter">Devo</div>
+                                        <div class="letter">l</div>
+                                        <div class="letter">oper</div>
+                                    </div>
+                                </div>
+                                <div id="pathbottom"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="keybord front"></div>
+                    <div class="keybord baseline"></div>
+                </div> -->
