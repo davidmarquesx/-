@@ -98,7 +98,7 @@
             <div class="card-text col-md-6">
                 <table>
                     <tr class="client">
-                        <td> <img src="https://workana.s3.amazonaws.com/logos/43/0885b0f32d11e898389dd5f9f544c6/Sem-Titulo-2.jpg" onerror="this.src='assets/img/clientes/default-logo.jpg'"> </td>
+                        <td> <img src="assets/img/clientes/default-logo.jpg"> </td>
                         <td> <h4>CLIENTE</h4> <p>Lucas Schievenin</p> </td>
                     </tr>
                     <tr class="project">
