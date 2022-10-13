@@ -131,7 +131,7 @@
 #the_game #controller .float-l, 
 #the_game #controller .float-r {    
     border-radius: 50%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.3);
     position: relative;
     overflow: hidden;
 }
@@ -149,7 +149,7 @@
 }
 #the_game #controller .btn {
     font-size: 2rem;
-    color: rgba(201, 194, 215, 0.4);
+    color: rgba(201, 194, 215, 0.3);
     position: absolute;
     outline: none;
 }
