@@ -96,6 +96,7 @@
     height: 48px;
     background: url('../../img/the_game/image2.png');
     background-repeat: no-repeat !important;
+    background-size: inherit !important;
     transition: background .2s linear;
     position: absolute;
     z-index: 99;
@@ -107,9 +108,9 @@
     animation: waking .4s infinite;
 }
 @keyframes waking {
-    33% { background: url('../../img/the_game/image1.png'); background-repeat: no-repeat !important; }
-    66% { background: url('../../img/the_game/image2.png'); background-repeat: no-repeat !important; }
-    99% { background: url('../../img/the_game/image3.png'); background-repeat: no-repeat !important; }
+    33% { background: url('../../img/the_game/image1.png'); }
+    66% { background: url('../../img/the_game/image2.png'); }
+    99% { background: url('../../img/the_game/image3.png'); }
 }
 #the_game #avatar.over {
     height: 70px;
