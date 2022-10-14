@@ -83,8 +83,8 @@
 	display: flex;
 	align-items: center;
 	margin-top: 2px;
-  position: absolute;
-  left: 5%;
+  	position: absolute;
+ 	left: 5%;
 }
 
 .navbar-nav #logo span, .navbar-slide #logo span {
@@ -149,16 +149,17 @@
 	.navbar .navbar-toggle {
 		display: block;
 	}
-	.navbar .collapse {		
+	.navbar .collapse {
+		display: none;
 		width: 100%;
 		height: 0;
 		background: rgba(0,0,0,.85);				
 		position: fixed;
-	  left: 0;
-	  top: 0px;	  
-	  overflow: hidden;
-	  transition: height 0.4s;
-	  z-index: -1;
+	  	left: 0;
+	  	top: 0px;	  
+	  	overflow: hidden;
+	  	transition: height 0.4s;
+	  	z-index: 0;
 	}
 	.navbar .collapse-in {	 	
 	 	width: 100vw;
