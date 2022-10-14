@@ -150,7 +150,6 @@
 		display: block;
 	}
 	.navbar .collapse {
-		display: none;
 		width: 100%;
 		height: 0;
 		background: rgba(0,0,0,.85);				
@@ -160,6 +159,9 @@
 	  	overflow: hidden;
 	  	transition: height 0.4s;
 	  	z-index: 0;
+	}
+	.navbar-collapse {
+		display: none;
 	}
 	.navbar .collapse-in {	 	
 	 	width: 100vw;
