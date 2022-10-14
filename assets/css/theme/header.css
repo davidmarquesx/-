@@ -158,7 +158,7 @@
 	  top: 0px;	  
 	  overflow: hidden;
 	  transition: height 0.4s;
-	  z-index: -1;
+	  z-index: 0;
 	}
 	.navbar .collapse-in {	 	
 	 	width: 100vw;
