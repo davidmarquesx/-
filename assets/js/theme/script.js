@@ -40,20 +40,18 @@ $(document).ready(function(){
 
             var section = 'section#' + window.location.hash.substr(2); 
             setTimeout(function(){ 
-                $('section').removeClass('page-fix'); $(section).addClass('page-fix');
-                //$('footer').show();
+                $('section').removeClass('page-fix'); $(section).addClass('page-fix');                
             }, 100);
         }
         if(window.location.hash == '#/home'){
             $('.navbar').removeClass('navbar-default navbar-nav');          
             setTimeout(function(){ $('.navbar').addClass('navbar-default').removeClass('navbar-nav') }, 100);
-            //$('footer').hide();
         }
     }
 
 
 // -------------------- header slideDown quando executar o scroll ------------------------ //   
-       $(window).scroll(function() {        
+      /*(window).scroll(function() {        
             if($(document).scrollTop() > 150) {
                 $('.navbar').removeClass('navbar-nav navbar-slide');  
             }  
@@ -65,30 +63,8 @@ $(document).ready(function(){
                 $('header').css('position','absolute');     
                 $('.navbar').addClass('navbar-nav').removeClass('navbar-slide');
             }   
-        }); 
+        }); */
 
-
-// ---------------------------- Suporte aos browsers IE ---------------------------------- //     
-    var sBrowser, sUsrAg = navigator.userAgent;
-
-    if (sUsrAg.indexOf("Trident") > -1) {
-        sBrowser = "Microsoft Internet Explorer / Microsoft Edge";
-
-        $('.icons-group').addClass('-ms-icons-group');
-        $('.testimonial table').addClass('-ms-testimonial-table');
-        $('.testimonial table .client').addClass('-ms-testimonial-table-client');
-        $('.testimonial table .project').addClass('-ms-testimonial-table-project');
-        var tableInfo = document.querySelectorAll('.testimonial table .client td:nth-child(2), .testimonial table .project td:nth-child(2)');
-        for(i=0; i < tableInfo.length; i++){
-            tableInfo[i].classList.add('-ms-testimonial-table-td-2nd');
-        }
-
-        $('.aquamask svg, .area-colisao object, .tomato .row').hide(); 
-        $('#animacoes .IE-alert, #animacoes .img-alt ').show();
-        $('#code_desenhoCSS').addClass('-ms-desenhoCSS');
-        $('.aquamask h8').addClass('-ms-aquamask-h8'); 
-        $('.tomato h8').addClass('-ms-tomato-h8');
-    }
 
 })
 
