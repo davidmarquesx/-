@@ -1,0 +1,252 @@
+/* ---Platform--- */
+#platform {
+    display: grid;
+    justify-content: center;
+    align-items: flex-end;
+    background: url('../../img/base/cross-stripes.png') rgb(57, 93, 111, .8);    
+}
+#platform #scene {
+    width: 360px;
+    height: 250px;
+    transform: scale(1.7);
+    overflow: hidden;
+    background:url('../../img/base/cross-stripes.png') #151f20;
+    position: relative;
+    bottom: 0;
+    z-index: 1;     
+}
+#platform #ball {
+    width: 56px;
+    height: 56px;
+    background: radial-gradient(circle, #533272 20%, #221c33 99%, rgba(130,87,230,.5) 100%);
+    clip-path: circle(50% at 50% 50%);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    animation: ball360 3s linear infinite;
+}
+#platform #ball:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 8px;
+    background: rgba(130,87,230,.7);
+    margin: -5px;
+    border-radius: 100%;      
+}
+@keyframes ball360 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#platform #ball.stop {
+    transform: rotate(180deg);
+    animation: ball360 0s;
+}
+#platform .tonnel {
+    width: 60px;
+    height: 68px;
+    position: absolute;
+}
+#platform .tonnel.left {
+    left: -1px;
+    top: 15%;
+}
+#platform .tonnel.right {
+    right: -1px;
+    bottom: 15%;
+}
+#platform .tonnel .area {
+    background: linear-gradient(0deg, rgb(68,68,68) 0%, rgb(93,111,115) 50%, rgb(68,68,68) 100%);   
+    clip-path: polygon(0% 0%, 100% 0%, 80% 10%, 70% 25%, 66% 50%, 71% 70%, 82% 88%, 100% 100%, 0% 100%);
+    position: absolute; 
+    z-index: 2;
+}
+#platform .tonnel .mask {      
+    width: 40px;
+    height: 68px;
+    background: #0b1415;
+    border-radius: 50%;
+    border: 1px solid #5d6e72;  
+    position: absolute;    
+    top: 0;
+    z-index: 1;
+}
+#platform .tonnel.left .area {
+    width: 40px;
+    height: 68px;
+}
+#platform .tonnel.left .mask {
+    right: 0;
+}
+#platform .tonnel.right .area {
+    width: 60px;
+    height: 68px;
+    transform: rotateY(180deg);
+}
+#platform .tonnel.right .mask {
+    left: -20px;
+}
+#platform .colision {   
+    background: #395d6f;
+    position: absolute;
+    bottom: 0;
+}
+#platform .colision:before  {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background: #5b6b73;    
+    left: 0;
+}
+#platform .colision.left {
+    width: 45%;  
+    height: 66%;
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+    left: -1px;
+}
+#platform .colision.left:before {
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0 80%);
+}
+#platform .colision.left:after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background: #607d8b;
+    clip-path: polygon(0 31%, 100% 0, 100% 100%, 0% 100%);
+    right: 0;
+}
+#platform .colision.right {
+    width: 60%;  
+    height: 23%;
+    clip-path: polygon(8% 0%, 100% 0, 100% 100%, 0 100%, 0% 100%);
+    transition: width .3s ease-out;
+    right: -1px;
+}
+#platform .colision.right.change {
+    width: 40%;
+    clip-path: inset(0);
+}
+#platform .colision.right.change:after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background: #607d8b;
+    clip-path: polygon(0 0, 0 0, 100% 100%, 0% 100%);
+}
+#platform .colision.right.break {
+    width: 42%;
+}
+#platform button {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    background: #1C1C1C;
+    border: 1px solid #222; 
+    cursor: pointer;
+    outline: none;
+    left: 30px;
+    bottom: 20%;
+    z-index: 9;
+}
+#platform button:before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 5px;
+    background: #999;
+    border-radius: 2px;
+    transform: rotate(-45deg);      
+    left: -2px;
+    top: -2px;
+}
+#platform button:after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(222,184,135,1) 40%, rgba(255,165,0,1) 100%);
+    right: -13px;
+    top: -12px;
+}
+#platform button.active:before {
+    transform: rotate(45deg);
+    left: -1px;
+    top: 8px;
+}
+#platform button.active:after {
+    right: -14px;
+    top: 9px;
+}
+
+
+
+@media all and (min-width: 1440px){
+    #platform #scene {
+        transform: scale(1.2);
+        bottom: 20px;
+    }
+}
+
+@media all and (min-width: 1600px){
+    #platform #scene {
+        transform: scale(1.4);
+        bottom: 40px;
+    }
+}
+
+@media all and (max-width: 1439px){
+    #platform #scene {
+        transform: scale(1.1);
+        bottom: 0;
+    }
+}*/
+
+@media all and (max-width: 1200px){
+    #platform #scene {
+        transform: scale(1.5);
+        bottom: 15%;           
+    }
+}
+
+@media all and (max-width: 1024px){
+    #platform #scene {
+        transform: scale(1.25);
+        bottom: 9.5%;  
+    }
+}
+
+@media all and (max-width: 840px){
+    #platform #scene {
+        transform: scale(1.8);
+        bottom: 25%;
+    }
+
+
+@media all and (max-width: 767px){
+    #platform #scene {
+        transform: scale(1.25);
+        bottom: 9%;
+    }
+}
+
+@media all and (max-width: 420px){
+    #platform #scene {
+        transform: scale(1);
+        left: 5px;
+        bottom: 0;
+    }
+}
+
+@media all and (max-width: 320px){
+    #platform #scene {
+        transform: scale(0.8);
+        bottom: -8px;
+    }
+}
+
