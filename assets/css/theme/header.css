@@ -3,229 +3,157 @@
 	width: 100%; 
 	height: auto;
 	display: grid;
-	grid-template-columns: auto auto;	
+	grid-template-columns: auto auto;
 	align-items: center;
-	user-select: none;
-	position: absolute;
-	top: -10vh;
+	background: rgba(0,0,0,.6);	
+	position: relative;
+	padding-top: 10px;
+	padding-right: 0;
 }
-
-.navbar #logo, .navbar-toggle {
+.navbar.navbar-default {
+	background: rgba(0,0,0,0);	
+	padding-right: 15px;
+}
+.navbar.navbar-nav {
+	animation: fadeIn 1s ease-in-out;
+}
+.navbar .logo {
+	padding-left: 15%;
+    padding-bottom: 2px;
+}
+.navbar .logo img {
+	margin: 0 5px;
+}
+.navbar .logo img, .navbar .logo span {
+	display: block;
+}
+.navbar.navbar-default .logo img, 
+.navbar.navbar-default .logo span {
 	display: none;
 }
-
+.navbar .navbar-toggle {
+	display: none;
+	padding-right: 5%;	
+}
+.navbar .navbar-toggle .btn {
+	cursor: pointer;
+}
 .navbar .navbar-collapse {
-	width: 100vw;
-	height: inherit;
+	display: flex;
+	justify-content: right;	
+	padding-right: 12.5%;
 }
-
 .navbar .navbar-collapse .menu {
-	display: flex; 
-	height: min-content;
-	position: absolute;
-  top: 10px;
-  right: 5%;
+	display: inline-flex;
 }
-
 .navbar .navbar-collapse .menu li {
 	padding: 15px;
 	list-style: none;
 }
-
 .navbar .navbar-collapse .menu li a {
 	font-size: 1.15rem;
-	color: #fff;
-	cursor: pointer;
 }
 
-.navbar .navbar-collapse .menu li:hover a {	
-	color: #ccc ;
-	transition: color .3s ease-in-out;
-}
-
-.navbar .navbar-toggle {
-  display: none;  
-  position: absolute;
-  background: transparent;
-  border-radius: 4px;
-  border: 1px solid transparent;  
-  outline: none;
-  cursor: pointer;
-  right: 15px;
-  top: 15px;
-  z-index: 1;
-}
-
-.navbar .navbar-toggle hr {
-  margin: 4px 0;
-  padding: 0 8px;
-  border-color: #fff;
-  border-radius: 1px;
-  background: rgba(255,255,255,.7);
-}
-
-.navbar-default {
-	background: rgba(0,0,0,0);	
-	left: -2px;
-	top: 0;
-	animation: fadeIn .4s ease-in-out;
-}
-
-.navbar-nav, .navbar-slide {
-	width: 101%;
-	height: 60px;
-	background: rgba(0,0,0,.6);	
-	left: 0;
-	top: 0;				
-}
-
-.navbar-nav #logo, .navbar-slide #logo {
-	display: flex;
-	align-items: center;
-	margin-top: 2px;
-  	position: absolute;
- 	left: 5%;
-}
-
-.navbar-nav #logo span, .navbar-slide #logo span {
-	margin: 0 2px;
-	width: max-content;
-	height: auto;
-}
-
-.navbar-nav {
-	animation: fadeIn .4s ease-in-out;
-}
-
-.navbar-slide {
-	transition: height .4s, top .4s;
-}
-
-.navbar-header {
-	width: 100%;
+.header-slide {
+	position: fixed;
+	top: 0vh !important;
+	transition: top .5s;
 }
 
 
-@media (min-width: 2049px) {
-	.navbar .navbar-collapse {
-		top: 10px;
+@media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (max-width: 840px) {		
+	.navbar .logo {
+		width: max-content;
+		height: 60px;
+		padding-left: 5%;
 	}
-	.navbar .navbar-collapse .menu li a {
-		font-size: 1.5rem;
+	.navbar .logo img, .navbar .logo span {
+		display: block;
+	}	
+	.navbar.navbar-default {
+		padding-right: 0;
 	}
-}
-
-
-@media all and (max-width: 840px) {
-	.navbar .navbar-toggle {
-		transform: scale(1.5);
-		top: 15px;
+	.navbar.navbar-default .logo img, 
+	.navbar.navbar-default .logo span {
+		display: none;
 	}
-	.navbar .navbar-collapse .menu li a {
-		padding: 18px 100%;
-		font-size: 1.75rem;
-	}
-	
-}
-
-@media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-	.navbar {
-		left: 15px;
-	}
-	.navbar .navbar-toggle {
-		transform: scale(2);
-		top: 15px;
-		right: 30px;
-	}
-	.navbar .collapse-in {
-		overflow-y: auto;
-	}
-	.navbar-slide {
-		width: 100%;
-	}
-}
-
-@media all and (max-device-width: 1024px), (max-width: 840px) {	
 	.navbar .navbar-toggle {
 		display: block;
+		padding-right: 15px;
 	}
-	.navbar .collapse {
+	.navbar .navbar-collapse {
+		display: none;
 		width: 100%;
-		height: 0;
-		background: rgba(0,0,0,.85);				
+		height: 100vh;
+		padding: 0;
+		align-items: center;
+		background: rgba(0,0,0,.85);
+		clip-path: inset(0 0 100%);
+		transition: all .6s;
 		position: fixed;
-	  	left: 0;
-	  	top: 0px;	  
-	  	overflow: hidden;
-	  	transition: height 0.4s;
-	  	z-index: 0;
+		top: 0;
+		z-index: -1;
 	}
-	.navbar .collapse-in {	 	
-	 	width: 100vw;
-	 	height: 100vh;
-	 	display: grid;
-	 	align-items: center;	
+	.navbar .navbar-collapse.collapse-in {
+		display: flex;
+	}
+	.navbar .navbar-collapse.collapse-in.expand {
+		clip-path: inset(0);
 	}
 	.navbar .navbar-collapse .menu {
+		display: grid;
 		width: 100%;
 		height: auto;
-		display: block;
-		text-align: center;
-		position: relative;
-		right: 0;
 	}
 	.navbar .navbar-collapse .menu li {
-		display: flex;
-		justify-content: center;
-		padding: 0;
-		margin: 2px 0;
-		overflow: hidden;
+		margin: 1px 0;
+		padding: 20px 0;
+		text-align: center;
+		transition: background .2s;
 	}
 	.navbar .navbar-collapse .menu li a {
-		padding: 15px 100%;
-		font-size: 2.25rem;
+		padding: 20px;
 	}
-	.navbar .menu li a:hover {
-		background: #151f20;
+	.navbar .navbar-collapse .menu li:hover {
+		background: #16222a;
 	}	
-	.navbar-slide {
-		background: rgba(0,0,0,.85);
-	}
-	.navbar-slide #logo {
-		margin: 7px 0;
-	}
 }
 
-
-@media all and (max-device-width: 739px), (max-device-width: 991px) and (orientation: landscape)  {
+@media all and (min-width: 841px) {
 	.navbar .navbar-collapse .menu li a {
-		font-size: 1.5rem;
+		font-size: 1.15rem;
 	}
 }
 
-@media all and (max-device-width: 480px), (max-device-width: 991px) and (orientation: landscape) {
-	.navbar .navbar-toggle {
-		transform: scale(1.5);
-		top: 15px;
-    right: 20px;
-	}
-	.navbar .navbar-toggle hr {
-		padding: 0 7px;
-	}
-}
 
-@media all and (max-device-width: 420px) and (orientation: portrait) {
-	.navbar .navbar-toggle {
-		transform: scale(1.75);
-	}
+@media all and (max-device-width: 1115px) {
 	.navbar .navbar-collapse .menu li a {
 		font-size: 2rem;
 	}
 }
 
 
-@media all and (max-device-height: 320px) and (orientation: landscape) {
+@media all and (max-device-width: 739px) {
+	.navbar {
+		padding-top: 7px;
+	}
+	.navbar .logo {
+		height: 45px;
+	}
 	.navbar .navbar-collapse .menu li a {
-		padding: 10px 100%;
+		font-size: 1.5rem;
+	}
+}
+
+
+@media all and (max-device-height: 420px) {
+	.navbar {
+		padding-top: 0;
+	}
+	.navbar .navbar-collapse .menu {
+		margin-top: 15vh;
+	}
+	.navbar .navbar-collapse .menu li a {
+		font-size: 1.25rem;
 	}
 }

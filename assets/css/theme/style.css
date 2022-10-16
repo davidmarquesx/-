@@ -1,12 +1,13 @@
 
+@import '../../fonts/font-awesome.min.css';
+
 @import 'default.css';
 @import 'header.css';
 
 
-@import '../../fonts/font-awesome.min.css';
 
 @import '../sections/home.css';
-@import '../sections/sobre.css';
+@import '../sections/sobre.css';/*
 @import '../sections/trabalhos.css';
 @import '../sections/galeria.css';
 @import '../sections/animacoes.css';
@@ -18,3 +19,5 @@
 @import '../src_animate/cube3D.css';
 @import '../src_animate/tomato.css';
 @import '../src_animate/the_game.css';
+
+*/
