@@ -96,6 +96,11 @@ $(document).ready(function(){
             $('.navbar-collapse').removeClass('collapse-in expand')
         }
     });
+    
+    header = document.querySelector('header');
+    header.addEventListener('contextmenu', function(e) { 
+            e.preventDefault();
+    }, false);
 
 
 })
