@@ -39,7 +39,7 @@ body {
 } 
 
 @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-	filter: contrast(0.9);
+	filter: contrast(0.85);
 }
 
 
