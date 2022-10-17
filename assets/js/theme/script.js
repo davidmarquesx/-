@@ -1,28 +1,35 @@
 
-
 $(document).ready(function(){
 
-    var section = document.querySelector('section');
+    var index = document.querySelector('section#home');
     var xhttp = new XMLHttpRequest();
 
     xhttp.onreadystatechange = function() {
         if(this) {
-            section.innerHTML = this.responseText;
-            section.setAttribute('id', 'home');
+            index.innerHTML = this.responseText;
+            index.classList.add('page-fix')
         }
     };
     xhttp.open('GET', 'assets/include/home.php', true);
     xhttp.send();
 
+    setTimeout(function(){
+        $('section#sobre').load('assets/include/sobre.php');
+        $('section#trabalhos').load('assets/include/trabalhos.php');
+        $('section#galeria').load('assets/include/galeria.php');
+        $('section#animacoes').load('assets/include/animacoes.php');
+    }, 2000)
+
 
     // ----------------------------- menu navigation ---------------------------------- //
     $('.menu li a').on('click', function(menuActive){
         const href = $(this).attr("href");
+        var hash = '#' + href.substr(1);
                   
-        window.location.hash = href; 
+        window.location.hash = href;        
+        $('section').removeClass('page-fix'); $(hash).addClass('page-fix');
 
         setTimeout(function(){ 
-            $('body').removeClass('page-fix');
             $('.navbar-collapse').removeClass('collapse-in expand'); 
         }, 100);
 
@@ -40,21 +47,17 @@ $(document).ready(function(){
                 $('.navbar').addClass('navbar-nav');
             }, 100); 
 
-            var hash = window.location.hash.substr(2);
-
-            xhttp.onreadystatechange = function() {
-                if(this) {
-                    section.innerHTML = this.responseText;
-                    section.setAttribute('id', hash);
-                }
-            };
-            xhttp.open('GET', 'assets/include/' + hash + '.php', true);
-            xhttp.send();
+            var section = 'section#' + window.location.hash.substr(2); 
+            setTimeout(function(){ 
+                $('section').removeClass('page-fix'); $(section).addClass('page-fix');
+            }, 100);
 
         }
         if(window.location.hash == '#/home'){ 
             setTimeout(function(){ $('.navbar').addClass('navbar-default') }, 20); 
         }
+
+        $('html, body').scrollTop(0);
     }
 
 
@@ -84,7 +87,6 @@ $(document).ready(function(){
         }
         
         setTimeout(function(){ 
-            $('body').toggleClass('page-fix');
             $('.navbar-collapse').toggleClass('expand');
         }, 100);
     })
@@ -96,7 +98,7 @@ $(document).ready(function(){
             $('.navbar-collapse').removeClass('collapse-in expand')
         }
     });
-    
+
     header = document.querySelector('header');
     header.addEventListener('contextmenu', function(e) { 
             e.preventDefault();
@@ -104,5 +106,3 @@ $(document).ready(function(){
 
 
 })
-
-
