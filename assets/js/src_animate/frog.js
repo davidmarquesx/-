@@ -50,6 +50,6 @@ function toface(type){
     frog.style.background = "url('assets/img/frog/" + type + ".png')";
 }
 
-$('#frog #cursor').on('pointerout', function(){
+$('#frog').on('pointerout', function(){
     frog.style.background = "url('assets/img/frog/elm-normal.png')";
 })
