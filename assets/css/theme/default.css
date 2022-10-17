@@ -80,7 +80,7 @@ header {
   float: left;  
   overflow-x: hidden;
   display: none;
-  animation: fadeOut .8s ease-in-out;
+  animation: fadeOut 1.2s ease-in-out;
  }
 
  footer {
@@ -108,7 +108,7 @@ i {
 
 .page-fix { 
   display: block;
-  animation: fadeIn .8s ease-in-out; 
+  animation: fadeIn 1.2s ease-in-out; 
 }
 
 
