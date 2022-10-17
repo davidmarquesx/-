@@ -185,3 +185,9 @@
         height: 280px;
     }
 }
+
+@media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    #tomato #topknot {
+        filter: brightness(0.9);
+    }
+}
