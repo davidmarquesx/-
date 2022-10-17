@@ -187,7 +187,10 @@
 }
 
 @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    #tomato #topknot {
+    #tomato #element #topknot {
+        mix-blend-mode: normal;
+    }
+    #tomato #element #topknot img {
         filter: brightness(0.5);
     }
 }
