@@ -122,7 +122,7 @@
         grid-template-columns: 75% 25%;
     }
     #tomato #element #eyes .eyeball {
-        width: auto;
+        width: 22%;
         height: 80%;
     }
     #tomato button {
