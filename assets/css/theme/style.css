@@ -4,6 +4,7 @@
 
 @import 'default.css';
 @import 'header.css';
+@import 'preloader.css';
 
 @import '../sections/home.css';
 @import '../sections/sobre.css';
