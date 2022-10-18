@@ -12,13 +12,15 @@ $(document).ready(function(){
     };
     xhttp.open('GET', 'assets/include/home.php', true);
     xhttp.send();
+    
+    setTimeout(function(){ $('#preloader').fadeOut() }, 1200)
 
     setTimeout(function(){
         $('section#sobre').load('assets/include/sobre.php');
         $('section#trabalhos').load('assets/include/trabalhos.php');
         $('section#galeria').load('assets/include/galeria.php');
         $('section#animacoes').load('assets/include/animacoes.php');
-    }, 2000)
+    }, 2600)
 
 
     // ----------------------------- menu navigation ---------------------------------- //
