@@ -99,7 +99,7 @@
     to{ filter: hue-rotate(45deg) drop-shadow(2px 4px 6px yellowgreen); }
 }
 #the_game #avatar {
-    width: 38px;
+    width: 40px;
     height: 48px;
     background: url('../../img/the_game/image2.png');
     background-repeat: no-repeat !important;
@@ -111,6 +111,7 @@
     transform: rotateY(180deg) !important;
 }
 #the_game #avatar.wake {
+    background-repeat: no-repeat !important;
     animation: waking .4s infinite;
 }
 @keyframes waking {
@@ -276,9 +277,9 @@
         left: -180px;
     }
 }
-/*
+
 @media all and (max-width: 320px) {
-    #the_game #scene {
-        bottom: 50px;
+     #the_game #scene.sceneFit {
+        left: -210px;
     }
-}*/
+}
