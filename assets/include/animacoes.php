@@ -123,15 +123,15 @@
                     </div>
                 </div>
                 <div id="cursor">
-                    <div class="mask" onpointerover="toface('elm-up-left')"></div>
-                    <div class="mask" onpointerover="toface('elm-up-middle')"></div>
-                    <div class="mask" onpointerover="toface('elm-up-right')"></div>
-                    <div class="mask" onpointerover="toface('elm-middle-left')"></div>
-                    <div class="mask" onpointerover="toface('elm-middle-middle')"></div>
-                    <div class="mask" onpointerover="toface('elm-middle-right')"></div>
-                    <div class="mask" onpointerover="toface('elm-down-left')"></div>
-                    <div class="mask" onpointerover="toface('elm-down-middle')"></div>
-                    <div class="mask" onpointerover="toface('elm-down-right')"></div>
+                    <div class="mask grid-1-1" ></div>
+                    <div class="mask grid-1-2" ></div>
+                    <div class="mask grid-1-3" ></div>
+                    <div class="mask grid-2-1" ></div>
+                    <div class="mask grid-2-2" ></div>
+                    <div class="mask grid-2-3" ></div>
+                    <div class="mask grid-3-1" ></div>
+                    <div class="mask grid-3-2" ></div>
+                    <div class="mask grid-3-3" ></div>
                 </div>
                 <script src="assets/js/src_animate/frog.js"></script>
             </div> 
