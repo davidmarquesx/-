@@ -44,8 +44,42 @@ function handleDeviceChange(resizeRelva) {
     $('#frog #relva .content').html(relvapath);
 }
 
-frog = document.querySelector('#frog #avatar');
+var frog = document.querySelector('#frog #avatar');
+var changeFrog = 'elm-up-left elm-up-middle elm-up-right ' + 
+                 'elm-middle-left elm-middle-middle elm-middle-right ' +
+                 'elm-down-left elm-down-middle elm-down-right ';
 
+$('#cursor .mask.grid-1-1').on('pointerover', function(){ 
+    $(frog).removeClass(changeFrog).addClass('elm-up-left') 
+})
+$('#cursor .mask.grid-1-2').on('pointerover', function(){ 
+    $(frog).removeClass(changeFrog).addClass('elm-up-middle') 
+})
+$('#cursor .mask.grid-1-3').on('pointerover', function(){ 
+    $(frog).removeClass(changeFrog).addClass('elm-up-right') 
+})
+$('#cursor .mask.grid-2-1').on('pointerover', function(){ 
+    $(frog).removeClass(changeFrog).addClass('elm-middle-left') 
+})
+$('#cursor .mask.grid-2-2').on('pointerover', function(){ 
+    $(frog).removeClass(changeFrog).addClass('elm-middle-middle') 
+})
+$('#cursor .mask.grid-2-3').on('pointerover', function(){ 
+    $(frog).removeClass(changeFrog).addClass('elm-middle-right') 
+})
+$('#cursor .mask.grid-3-1').on('pointerover', function(){ 
+    $(frog).removeClass(changeFrog).addClass('elm-down-left') 
+})
+$('#cursor .mask.grid-3-2').on('pointerover', function(){ 
+    $(frog).removeClass(changeFrog).addClass('elm-down-middle') 
+})
+$('#cursor .mask.grid-3-3').on('pointerover', function(){ 
+    $(frog).removeClass(changeFrog).addClass('elm-down-right') 
+})
+
+
+
+/*
 function toface(type){
     frog.style.background = "url('assets/img/frog/" + type + ".png')";
 }
@@ -53,3 +87,4 @@ function toface(type){
 $('#frog').on('pointerout', function(){
     frog.style.background = "url('assets/img/frog/elm-normal.png')";
 })
+*/
