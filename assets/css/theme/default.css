@@ -2,7 +2,7 @@
 @font-face { font-family: 'lato'; src: url('../../fonts/Lato-Regular.ttf'); }
 @font-face { font-family: 'lato'; src: url('../../fonts/Lato-Regular.woff'); }
 @font-face { font-family: 'lato'; src: url('../../fonts/Lato-Regular.woff2'); }
-@font-face { font-family: 'Font Awesome 6 Free'; src: url('../../fonts/Font Awesome_6 Brands-Regular-400.otf'); }
+@font-face { font-family: 'Font Awesome 6 Free'; src: url('../../fonts/Font_Awesome_6 Brands-Regular-400.otf'); }
 @font-face { font-family: 'Font Awesome 6 Free'; src: url('../../fonts/font_Awesome_6_Free-Solid-400.otf'); }
 @font-face { font-family: 'Font Awesome 6 Free'; src: url('../../fonts/font_Awesome_6_Free-Solid-900.otf'); }
 
@@ -62,9 +62,6 @@ body {
   }
 }
 
-#preloader {
-  height: 100vh;
- }
 
 header {
  	width: 100%;
@@ -79,12 +76,9 @@ header {
   height: auto;
   float: left;  
   overflow-x: hidden;
+  padding-bottom: 30px;
   display: none;
   animation: fadeOut 1.2s ease-in-out;
- }
-
- footer {
-  display: none;
  }
 
 a {
@@ -111,6 +105,9 @@ i {
   animation: fadeIn 1.2s ease-in-out; 
 }
 
+.scrolling-no {
+  overflow-y: hidden;
+}
 
 /* animations adicionais */
 @keyframes fadeIn {
