@@ -12,20 +12,7 @@
     background: url('../../img/base/ruido.png');
     transform: rotate(90deg);
 }
-#frog #avatar  {
-    width: 190px;
-    height: 160px;
-    background: url('../../img/frog/elm-normal.png');
-    background-size: 100% 100% !important;
-    background-repeat: no-repeat !important;
-    background-position-y: bottom !important;
-    filter: brightness(0.9);
-    transition: all .2s linear;
-    position: absolute;
-    bottom: 0;
-}
-
-#frog #avatar:after  {
+#frog:after  {
     content:"";
     width: 190px;
     height: 160px;
@@ -35,6 +22,18 @@
     background-position-y: bottom;
     filter: brightness(0.9);
     opacity: .8;
+    position: absolute;
+    bottom: 0;
+}
+#frog #avatar  {
+    width: 190px;
+    height: 160px;
+    background: url('../../img/frog/elm-normal.png');
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+    background-position-y: bottom !important;
+    filter: brightness(0.9);
+    transition: all .2s linear;
     position: absolute;
     bottom: 0;
 }
