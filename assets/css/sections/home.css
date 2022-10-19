@@ -1,5 +1,6 @@
 
 section#home {
+	padding-bottom: 0;
 	overflow: hidden;
 }
 section#home .container {
