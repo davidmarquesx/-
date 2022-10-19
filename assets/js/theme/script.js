@@ -12,15 +12,18 @@ $(document).ready(function(){
     };
     xhttp.open('GET', 'assets/include/home.php', true);
     xhttp.send();
-    
-    setTimeout(function(){ $('#preloader').fadeOut() }, 1200)
+
+    setTimeout(function(){ $('#preloader').fadeOut(); }, 2000)
 
     setTimeout(function(){
         $('section#sobre').load('assets/include/sobre.php');
         $('section#trabalhos').load('assets/include/trabalhos.php');
         $('section#galeria').load('assets/include/galeria.php');
         $('section#animacoes').load('assets/include/animacoes.php');
-    }, 2600)
+        $('footer').load('assets/include/footer.php');
+        $('#preloader').remove();
+    }, 4000)
+
 
 
     // ----------------------------- menu navigation ---------------------------------- //
@@ -32,6 +35,7 @@ $(document).ready(function(){
         $('section').removeClass('page-fix'); $(hash).addClass('page-fix');
 
         setTimeout(function(){ 
+            $('body').removeClass('scrolling-no');
             $('.navbar-collapse').removeClass('collapse-in expand'); 
         }, 100);
 
@@ -45,19 +49,24 @@ $(document).ready(function(){
     window.onhashchange = function() {            
         if(window.location.hash !== '#'){
             $('.navbar').removeClass('navbar-default navbar-nav');
+            $('footer').show().removeClass('color-light color-coffee');
             setTimeout(function(){ 
                 $('.navbar').addClass('navbar-nav');
             }, 100); 
 
             var section = 'section#' + window.location.hash.substr(2); 
             setTimeout(function(){ 
-                $('section').removeClass('page-fix'); $(section).addClass('page-fix');
+                $('section').removeClass('page-fix'); $(section).addClass('page-fix');                
             }, 100);
 
         }
         if(window.location.hash == '#/home'){ 
-            setTimeout(function(){ $('.navbar').addClass('navbar-default') }, 20); 
+            setTimeout(function(){ $('.navbar').addClass('navbar-default') }, 20);
+            $('footer').hide(); 
         }
+
+        if(window.location.hash == '#/trabalhos'){ $('footer').addClass('color-light') }
+        if(window.location.hash == '#/galeria'){ $('footer').addClass('color-coffee') }
 
         $('html, body').scrollTop(0);
     }
@@ -89,6 +98,7 @@ $(document).ready(function(){
         }
         
         setTimeout(function(){ 
+            $('body').toggleClass('scrolling-no');
             $('.navbar-collapse').toggleClass('expand');
         }, 100);
     })
