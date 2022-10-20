@@ -24,7 +24,7 @@
     position: absolute;
     bottom: 0;
 }
-#frog #avatar #image {
+#frog image {
     display:none;
 }
 #frog #avatar.elm-up-left {
