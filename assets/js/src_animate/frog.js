@@ -50,11 +50,7 @@ var changeFrog = 'elm-up-left elm-up-middle elm-up-right ' +
                  'elm-down-left elm-down-middle elm-down-right ';
 
 $('#cursor .mask').on('pointerleave', function(){
-    $('#frog #image').show();
     $(frog).removeClass(changeFrog);
-})
-$('#cursor .mask').on('pointerover', function(){
-    $('#frog #image').hide();
 })
 
 $('#cursor .mask.grid-1-1').on('pointerover', function(){ 
