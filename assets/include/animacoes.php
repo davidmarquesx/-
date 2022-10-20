@@ -254,7 +254,11 @@
         </div>   
     </div>
 </div>
-
+<script type="text/javascript">
+   $('.source-animate').on('contextmenu', function(e){
+        e.preventDefault();
+    }, false)
+</script>
 
 
 
