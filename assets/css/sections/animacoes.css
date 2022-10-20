@@ -42,11 +42,14 @@ section#animacoes .caption blockquote span {
 
 
 @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    section#animacoes .caption span, 
-    section#animacoes .caption blockquote {
+    section#animacoes .caption blockquote:first-child {
         display: none;
     }
+    section#animacoes .caption blockquote:last-child {
+        display: block !important;
+    }
 }
+
 
 @media all and (min-width: 1367px){
     .source-animate {    
