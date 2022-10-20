@@ -1,4 +1,3 @@
-<a name="/galeria">
 <div class="container">   
     <p class="align-center">Trabalhos e inspirações gráficas e digitais</p>        
     <div class="grid-row">     
