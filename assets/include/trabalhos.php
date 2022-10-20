@@ -2,7 +2,6 @@
     <div class="btn prev align-center"><i class="fas fa-chevron-left" style="display: none"></i></div> 
     <div class="btn next  align-center"><i class="fas fa-chevron-right"></i></div>
     <div class="row">
-
         <div class="testimonial">
             <div class="card-image col-md-6">
                 <img src="assets/img/projetos/img12.jpg" class="vertical">
