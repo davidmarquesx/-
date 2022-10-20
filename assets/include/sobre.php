@@ -4,8 +4,8 @@
 		    <p id="info">
 		      <strong>Sobre mim</strong>
 		      <br/><br/>
-			    Formado em Computação Gráfica trabalho compartilhando dos meus conhecimentos em Informática e Design, buscando evoluir cada vez mais minha capacidade como profissional. Colocando minhas experiências na utilização de softwares de produção em artigos gráficos e digitais, trabalho como instrutor em cursos livres e desenvolvimento de projetos para as empresas onde estive em colaboratividade.
-			    Realizando desenvolvimento de folders, logos, websites, layouts, banners impresso ou digital, email marketing, informativos, animações, autoração de DVD, edição de vídeo, apresentação de slides, etc.
+			    Formado em Computação Gráfica e Analise de Sistemas compartilho dos meus conhecimentos em Informática e Design, buscando evoluir cada vez mais minha capacidade como profissional. Colocando minhas experiências na utilização de softwares de produção em artigos gráficos e digitais, trabalho como instrutor em cursos livres e desenvolvimento de projetos para as empresas onde estive em colaboratividade.
+			    Realizando desenvolvimento de folders, logos, websites, layouts, banners impresso ou digital, email marketing, videomaker, autoração DVD, informativos, planilhas, apresentação de slides, etc.
 			    <br/><br/>
 			    Também exerço minhas habilidades como home-office no desenvolvimento front-end e manutenção em CMS como: Shopify, Tray, Leadlovers, Wordpress, Magento, etc.
 			</p>		    
