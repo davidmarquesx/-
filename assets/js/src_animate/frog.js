@@ -49,42 +49,34 @@ var changeFrog = 'elm-up-left elm-up-middle elm-up-right ' +
                  'elm-middle-left elm-middle-middle elm-middle-right ' +
                  'elm-down-left elm-down-middle elm-down-right ';
 
+$('#cursor .mask').on('pointerleave', function(){
+    $(frog).removeClass(changeFrog)
+})
 $('#cursor .mask.grid-1-1').on('pointerover', function(){ 
-    $(frog).removeClass(changeFrog).addClass('elm-up-left') 
+    $(frog).addClass('elm-up-left') 
 })
 $('#cursor .mask.grid-1-2').on('pointerover', function(){ 
-    $(frog).removeClass(changeFrog).addClass('elm-up-middle') 
+    $(frog).addClass('elm-up-middle') 
 })
 $('#cursor .mask.grid-1-3').on('pointerover', function(){ 
-    $(frog).removeClass(changeFrog).addClass('elm-up-right') 
+    $(frog).addClass('elm-up-right') 
 })
 $('#cursor .mask.grid-2-1').on('pointerover', function(){ 
-    $(frog).removeClass(changeFrog).addClass('elm-middle-left') 
+    $(frog).addClass('elm-middle-left') 
 })
 $('#cursor .mask.grid-2-2').on('pointerover', function(){ 
-    $(frog).removeClass(changeFrog).addClass('elm-middle-middle') 
+    $(frog).addClass('elm-middle-middle') 
 })
 $('#cursor .mask.grid-2-3').on('pointerover', function(){ 
-    $(frog).removeClass(changeFrog).addClass('elm-middle-right') 
+    $(frog).addClass('elm-middle-right') 
 })
 $('#cursor .mask.grid-3-1').on('pointerover', function(){ 
-    $(frog).removeClass(changeFrog).addClass('elm-down-left') 
+    $(frog).addClass('elm-down-left') 
 })
 $('#cursor .mask.grid-3-2').on('pointerover', function(){ 
-    $(frog).removeClass(changeFrog).addClass('elm-down-middle') 
+    $(frog).addClass('elm-down-middle') 
 })
 $('#cursor .mask.grid-3-3').on('pointerover', function(){ 
-    $(frog).removeClass(changeFrog).addClass('elm-down-right') 
+    $(frog).addClass('elm-down-right') 
 })
 
-
-
-/*
-function toface(type){
-    frog.style.background = "url('assets/img/frog/" + type + ".png')";
-}
-
-$('#frog').on('pointerout', function(){
-    frog.style.background = "url('assets/img/frog/elm-normal.png')";
-})
-*/
