@@ -18,7 +18,8 @@
 #platform #ball {
     width: 56px;
     height: 56px;
-    background: radial-gradient(circle, #533272 20%, #221c33 99%, rgba(130,87,230,.5) 100%);
+    background: url('../../img/base/esfera.png');
+    background-size: cover;
     clip-path: circle(50% at 50% 50%);
     display: flex;
     justify-content: center;
@@ -29,11 +30,10 @@
 #platform #ball:before {
     content: "";
     position: absolute;
-    width: 16px;
-    height: 8px;
-    background: rgba(130,87,230,.7);
-    margin: -5px;
-    border-radius: 100%;      
+    width: 100%;
+    height: 100%;
+    background: #533272;
+    opacity: .65;
 }
 @keyframes ball360 {
     0% { transform: rotate(0deg); }
