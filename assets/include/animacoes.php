@@ -107,7 +107,7 @@
                 <div id="avatar" class="auto-center">
                  <!--  <img src="assets/img/frog/elm-normal.png"> -->
                 </div>
-                <image src="assets/img/frog/elm-normal.png">
+                <image src="assets/img/frog/elm-normal.png" />
                 <div id="relva">
                     <div class="content">
                         <span></span>
