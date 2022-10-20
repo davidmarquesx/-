@@ -65,7 +65,7 @@ function tomatoDrop(ev) {
 
 $('#tomato #mouth').on('touchend', function(){ 
    $('#tomato #panel .drag').clone().prependTo('#tomato #mouth'); 
-
+   $('#tomato #mouth img:nth-child(2)').remove();
 })
 
 
