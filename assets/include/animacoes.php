@@ -1,4 +1,3 @@
-<a name="/animacoes">
 <div class="container">    
     <div class="grid-row align-center">         
         <div class="col-md-6">            
