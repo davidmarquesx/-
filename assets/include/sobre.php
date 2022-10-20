@@ -1,6 +1,5 @@
 <div class="container">
 	<div class="row">
-			
 		<div class="profile col-md-12">
 		    <p id="info">
 		      <strong>Sobre mim</strong>
@@ -12,13 +11,6 @@
 			</p>		    
 		</div>				
 	</div>
-	<!--
-	<div class="row">
-		<div class="card col-md-4"></div>
-		<div class="card col-md-4"></div>
-		<div class="card col-md-4"></div>
-	</div>
-	-->
 	<div class="row">
 		<div class="profile col-md-4">
 			<img src="assets/img/base/me.jpg" width="100%" height="auto" />
