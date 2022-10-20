@@ -24,7 +24,9 @@
     position: absolute;
     bottom: 0;
 }
-
+#frog #avatar #image {
+    display:none;
+}
 #frog #avatar.elm-up-left {
     background: url('../../img/frog/elm-up-left.png');
 }
