@@ -6,7 +6,6 @@ $(avatar).css({left: x, bottom: y});
 
 $('#the_game #scene').on('keyup', function() {
     $(avatar).removeClass('wake');
-    clearInterval(avatarMove);
 });
 
 
