@@ -12,7 +12,7 @@ $('#the_game #scene').on('keyup', function() {
 $('#the_game #scene').on('keydown', function() {
     if(event.keyCode == '65'){ avatarWakeLeft();  colision(); }
     if(event.keyCode == '68'){ avatarWakeRight(); colision(); }
-    if(event.keyCode == '32'){ avatarJump(); }
+    if(event.keyCode == '76'){ avatarJump(); }
     if(event.keyCode == '83'){ avatarJumpDown(); }
     if(event.keyCode == '87'){ avatarJumpUp(); }
 });
