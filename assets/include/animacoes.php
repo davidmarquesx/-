@@ -246,14 +246,14 @@
                 Clique no cenário acima e utilize os comandos a seguir:
                 <blockquote>
                     Mover - use as teclas <span>A</span> ou <span>D</span>. <br>
-                    Pulo - use a tecla <span>Space</span> (barra de espaço) <br>
-                    Subir - pulo + tecla <span>W</span> <br>
+                    Pulo - use a tecla <span>L</span><br>
+                    Escalar - pulo + tecla <span>W</span> <br>
                     Descer - pulo + tecla <span>S</span> <br>
                 </blockquote>
                 <blockquote style="display:none;">
                     Mover - direcionais <span>Esquerda</span> ou <span>Direita</span>. <br>
                     Pulo - pressione o botão <span>O</span> <br>
-                    Subir - pulo + direcional <span>Cima<span> <br>
+                    Escalar - pulo + direcional <span>Cima<span> <br>
                     Descer - pulo + direcional <span>Baixo</span> <br>
                 </blockquote>
             </dt>  
