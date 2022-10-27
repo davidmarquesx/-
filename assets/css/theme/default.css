@@ -81,6 +81,10 @@ header {
   animation: fadeOut 1.2s ease-in-out;
  }
 
+img {
+  pointer-events: none;
+}
+
 a {
   color: #fff;
   text-decoration: none;
