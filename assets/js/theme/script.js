@@ -13,7 +13,7 @@ $(document).ready(function(){
     xhttp.open('GET', 'assets/include/home.php', true);
     xhttp.send();
 
-    setTimeout(function(){ $('#preloader').fadeOut(); }, 2000)
+    setTimeout(function(){ $('#preloader').fadeOut(); }, 2200)
 
     setTimeout(function(){
         $('section#sobre').load('assets/include/sobre.php');
@@ -22,7 +22,7 @@ $(document).ready(function(){
         $('section#animacoes').load('assets/include/animacoes.php');
         $('footer').load('assets/include/footer.php');
         $('#preloader').remove();
-    }, 2600)
+    }, 2800)
 
 
 
