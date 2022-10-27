@@ -22,7 +22,7 @@ $(document).ready(function(){
         $('section#animacoes').load('assets/include/animacoes.php');
         $('footer').load('assets/include/footer.php');
         $('#preloader').remove();
-    }, 2500)
+    }, 2600)
 
 
 
