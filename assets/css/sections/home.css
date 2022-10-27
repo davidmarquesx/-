@@ -37,6 +37,7 @@ section#home .container:before {
 .main-image img {	
 	width: 75%;
 	height: auto;
+	pointer-events: none;
 	position: absolute;
 	bottom: 0;
 }
