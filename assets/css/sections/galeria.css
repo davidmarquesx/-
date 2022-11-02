@@ -63,6 +63,7 @@ section#galeria .readmore {
 }
 #lightbox.fadeIn img.gif {
   clip-path: inset(0% 14px 0% 0%); 
+  border: 0;
 }
 #lightbox.fadeOut {
   animation: fadeOut 1.2s ease-in-out; 
@@ -137,7 +138,11 @@ section#galeria .readmore {
       top: 0;
       opacity: 1;
       animation: gridfadeIn 1s linear;
-  }    
+  }
+  #lightbox.fadeIn img.vertical {
+    width: 80%;
+    height: auto;
+  }
 }
 
 @keyframes gridfadeIn {
