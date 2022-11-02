@@ -54,6 +54,7 @@
     width: 100px;
     height: auto;
     position: absolute;
+    pointer-events: none;
 }
 #tomato #element #mouth img#item2 {
     margin-top: -15px;
