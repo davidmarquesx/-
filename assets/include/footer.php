@@ -29,8 +29,7 @@
 			</a>
 			<a href="https://www.workana.com/freelancer/ec5a7e4db96c98241739c7c7d5af9e89" target="_blank">
 				<i class="icon fab fa-sharp fa-solid fa-o">
-					<img src="https://wkncdn.com/newx/assets/build/img/logos/mobile_logo.16f3a81b5.svg" alt="Workana - Acesse os melhores talentos da América Latina" style="width:25px; height:auto; margin:-5px 0; filter:grayscale(1) brightness(1.5);">
-				</i>
+					</i>
 			</a>
 		</div>
 	</div>
