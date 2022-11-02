@@ -50,6 +50,7 @@ $(document).ready(function(){
         if(window.location.hash !== '#'){
             $('.navbar').removeClass('navbar-default navbar-nav');
             $('footer').show().removeClass('color-light color-coffee');
+            $('#lightbox').removeClass('fadeIn fadeOut'); $('#lightbox img').remove(); 
             setTimeout(function(){ 
                 $('.navbar').addClass('navbar-nav');
             }, 100); 
