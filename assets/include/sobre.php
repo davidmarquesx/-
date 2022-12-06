@@ -13,7 +13,7 @@
 	</div>
 	<div class="row">
 		<div class="profile col-md-4">
-			<img src="assets/img/base/me.jpg" width="100%" height="1500" />
+			<img src="assets/img/base/me.jpg" width="1125" height="1500" alt="davidmarquesx" />
 		</div>	
 		<div class="icons-group row align-center">
 			<div class="col-md-12">
