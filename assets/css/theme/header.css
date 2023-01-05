@@ -61,7 +61,7 @@
 }
 
 
-@media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (max-width: 840px) {		
+@media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {		
 	.navbar .logo {
 		width: max-content;
 		height: 60px;
