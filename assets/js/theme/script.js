@@ -103,6 +103,17 @@ $(document).ready(function(){
             $('.navbar-collapse').toggleClass('expand');
         }, 100);
     })
+    
+    
+    // ------------------------------ Source Animate fixed ----------------------------------- //
+    $('section#animacoes .source-animate').on('pointerover', function(){
+        $('section#animacoes').addClass('touch-none')
+    })
+    
+    $('section#animacoes .source-animate').on('pointerout', function(){
+        $('section#animacoes').removeClass('touch-none')
+    })
+    
 
 
     // ------------------------------ end jQuery ----------------------------------- //
