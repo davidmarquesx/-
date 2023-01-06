@@ -110,6 +110,13 @@ i {
   overflow-y: hidden;
 }
 
+
+@media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .touch-none {
+	overflow-y: hidden;
+  }
+}
+
 /* animations adicionais */
 @keyframes fadeIn {
   from{ opacity: 0; }
