@@ -269,11 +269,11 @@
     }, false)
     
      $('.source-animate').on('pointerover', function(){
-        $('body').addClass('scrolling-no')
+        $('body').addClass('touch-none')
     })
     
     $('.source-animate').on('pointerout', function(){
-        $('body').removeClass('scrolling-no')
+        $('body').removeClass('touch-none')
     })
     
 
