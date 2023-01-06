@@ -58,9 +58,6 @@ section#animacoes .caption blockquote span {
     section#animacoes .caption blockquote:last-child {
         display: block !important;
     }
-    .touch-none {
-        overflow: hidden;
-    }
 }
 
 
