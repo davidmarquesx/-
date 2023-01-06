@@ -272,7 +272,7 @@
         $('body').addClass('touch-none')
     })
     
-    $('.source-animate').on('pointerout', function(){
+    $('.source-animate').on('pointerleave', function(){
         $('body').removeClass('touch-none')
     })
     
