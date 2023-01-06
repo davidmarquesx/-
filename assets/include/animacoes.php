@@ -267,6 +267,16 @@
    $('.source-animate').on('contextmenu', function(e){
         e.preventDefault();
     }, false)
+    
+     $('.source-animate').on('pointerover', function(){
+        $('section#animacoes').addClass('touch-none')
+    })
+    
+    $('.source-animate').on('pointerout', function(){
+        $('section#animacoes').removeClass('touch-none')
+    })
+    
+
 </script>
 
 
