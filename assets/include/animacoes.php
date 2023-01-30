@@ -268,11 +268,11 @@
         e.preventDefault();
     }, false)
     
-     $('.source-animate').on('pointerover', function(){
+     $('.source-animate').on('pointerdown', function(){
         $('body').addClass('touch-none')
     })
     
-    $('.source-animate').on('pointerleave', function(){
+    $('.source-animate').on('pointerout', function(){
         $('body').removeClass('touch-none')
     })
     
