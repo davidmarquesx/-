@@ -29,11 +29,11 @@ section#animacoes .col-md-4 {
 section#animacoes .caption {
     line-height: 1.4;
 }
-section#animacoes .caption blockquote {
+section#animacoes .caption td {
     text-align: left;
     margin-left: 40px;
 }
-section#animacoes .caption blockquote span {
+section#animacoes .caption td span {
     text-shadow: 0px 0px 1px #fff;
 }
 
@@ -52,10 +52,10 @@ section#animacoes .caption blockquote span {
 
 
 @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    section#animacoes .caption blockquote:first-child {
+    section#animacoes .caption td:first-child {
         display: none;
     }
-    section#animacoes .caption blockquote:last-child {
+    section#animacoes .caption td:last-child {
         display: block !important;
     }
 }
