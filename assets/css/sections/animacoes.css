@@ -29,11 +29,11 @@ section#animacoes .col-md-4 {
 section#animacoes .caption {
     line-height: 1.4;
 }
-section#animacoes .caption td {
+section#animacoes .caption dt {
     text-align: left;
     margin-left: 40px;
 }
-section#animacoes .caption td span {
+section#animacoes .caption dt span {
     text-shadow: 0px 0px 1px #fff;
 }
 
@@ -52,10 +52,10 @@ section#animacoes .caption td span {
 
 
 @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    section#animacoes .caption td:first-child {
+    section#animacoes .caption dt:first-child {
         display: none;
     }
-    section#animacoes .caption td:last-child {
+    section#animacoes .caption dt:last-child {
         display: block !important;
     }
 }
