@@ -4,7 +4,7 @@ section#home {
 	overflow: hidden;
 }
 section#home .container {
-	background: url('../../img/base/fundo.png') no-repeat #16222a;
+	background: url('../../img/base/fundo1.jpg') no-repeat #16222a;
 	background-size: cover;
 	background-position: bottom center;
 	padding-bottom: 0;
