@@ -1,5 +1,5 @@
 <div class="container">
-   <div class="row">
+   <div class="row" style="height:100%">
         <div class="main-image col-md-6">
             <img src="assets/img/base/me1.png" alt="davidmarquesx"/> 
         </div>
