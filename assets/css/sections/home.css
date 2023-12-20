@@ -34,23 +34,32 @@ section#home .container:before {
 	justify-content: center;
 	position: relative;
 }
+.main-image {
+	align-items: end;
+}
 .main-image img {	
-	width: 75%;
+	width: 456px;
 	height: auto;
 	pointer-events: none;
-	position: absolute;
-	bottom: 0;
+	transform: scaleX(.98);
 }
+.main-text {
+	align-items: center;
+}
+.main-text #info {
+	font-size: 14px;
+	margin-top: 30px;		
+}
+.main-text #info > h1 {
+	font-size: 6.5rem;
+}	
 .main-text #info {	
 	display: grid;
 	font-family: 'arial';
-	font-size: 1.2rem;
-	padding: 0 2vw;
-	position: absolute;
-	bottom: 2vw;
+	/*font-size: 1.25rem;*/	
 }
 .main-text #info h1 {
-	font-size: 7rem;
+	/*font-size: 7rem;*/
 	color: #bed0d3; 
     line-height: 85%;    
     text-shadow: 2px 2px 2px #1d2b34;
@@ -61,99 +70,111 @@ section#home .container:before {
 	font-size: 2em;
     font-weight: 100;
     line-height: unset;  
+	
 }
 .main-text #info h2 strong {
 	text-shadow: 2px 2px 2px #1d2b34;
 	color: #bed0d3;
 }
 .main-text #info h3 {
-	font-size: 1.4em;
+	font-size: 1.33em;
 	font-weight: lighter;
 	padding: 4vh 10vw;	
+	text-shadow: 0 2px 1px #000;
 } 
 
 
-@media all and (min-width: 1367px){
+
+@media all and (min-width: 768px){
+	.main-image, .main-text {
+		max-width: 50%;
+    	flex: 0 0 50%;
+	}
 	.main-image img {	
-		width: 580px;
+		width: 456px;
 		height: auto;
 	}
 	.main-text #info {
-		font-size: 22px;
-		bottom: 2vw;
+		font-size: 14px;
+		margin-top: 30px;		
 	}
 	.main-text #info > h1 {
-		font-size: 8.5rem;
+		font-size: 6.5rem;
+	}	
+}
+
+
+@media all and (min-width: 1200px){
+	.main-image img {	
+		width: 520px;
+		height: auto;
+	}
+	.main-text #info {
+		font-size: 16px;
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+	.main-text #info > h1 {
+		font-size: 7rem;
+	}
+	.main-text #info h2 {
+		font-size: 2em;
+		padding-right: 8vw;
+	}	
+}
+
+
+@media all and (min-width: 1367px){
+	.main-image img {
+		width: 580px;
+		height: auto;
+		transform: scaleX(.95);
+	}
+	.main-text #info {
+		font-size: 22px;
+		margin-top: 50px;
+	}
+	.main-text #info > h1 {
+		font-size: 8rem;
 	}
 	.main-text #info > h2 {
 		font-size: 1.75em;
 		line-height: 104%;
-	}		
+		padding-right: 4vw;
+	}	
 }
 
+
 @media all and (min-width: 1601px){
-	.main-image img {	
-		width: 740px;
-		height: auto;
+	.main-image img {
+		width: 720px;
+		height: auto;		
+		transform: scaleX(.98);
 	}
 	.main-text #info {
 		font-size: 26px;
+		padding: 0 2vw;	
+		margin-top: 30px;
+		margin-bottom: -30px;	
 	}
 	.main-text #info > h1 {
-		font-size: 11rem;
+		font-size: 10rem;
 	}
 	.main-text #info > h2 {
-		font-size: 2em;
+		font-size: 1.75em;
+		line-height: 108%;
+		padding-right: 4vw;
 	}
-}
-
-@media all and (max-width: 1366px){
-	.main-image img {	
-		width: 480px;
-		height: auto;
-	}
-	.main-text #info > h2 {
-		width: 80%;
-	}	
-}
-
-@media all and (max-width: 1200px){
-	.main-image img {
-		left: -4vw;
-	}
-	.main-text #info > h2 {
-		width: 100%;
-	}	
-}
-
-
-
-@media all and (max-width: 840px) {
-	.main-image, .main-text {
-		width: 100%;
-	}
-	.main-image {
-		order: 1;
-	}
-	.main-image img {
-		width: 360px;
-		height: auto;
-	}
-	.main-text {
-		order: 0;
-	}
-	.main-text #info {
-		font-size: 13px;
-		top: -4vh;
-    	bottom: unset;
-	}
-	.main-text #info h1 {
-		font-size: 5.6rem;
+	.main-text #info > h3 {
+		font-size: 1.17em;
 	}
 }
 
 
-@media all and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media all and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (max-width: 768px) {
+	section#home .container {
+		padding: 0 30px;
+	}
 	.main-image, .main-text {
 		max-width: 50%;
     	flex: 0 0 50%;
@@ -164,10 +185,13 @@ section#home .container:before {
 	.main-text {
 		order: 1;
 	}
+	
 }
 
-
 @media all and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+	section#home .container {
+		padding: 60px 15px 0;
+	}
 	.main-image, .main-text {
 		max-width: 100%;
     	flex: 0 0 100%;
@@ -177,28 +201,22 @@ section#home .container:before {
 	}
 	.main-text {
 		order: 0;
+		padding-bottom: 0;
+	}
+	.main-text #info h3 {
+		font-size: 1.54em;
+		padding: 3vh 0vw;
+		text-align: center;
 	}
 }
 
-
-@media all and (max-device-width: 991px) and (orientation: landscape) {
-	section#home .container {
-		background-size: 150%;
-		background-position: 15% bottom;
-	}
-	.main-image img {
-		width: 340px;
-    	height: auto;
-    	left: 0;
+@media all and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 1115px) {
+	.main-text {
+		align-items: end;
 	}
 	.main-text #info {
-		padding: 0 5px;
-		font-size: 13px;
-		margin-top: 30px;
-		bottom: 0;
-	}
-	.main-text #info h1 {
-		font-size: 5rem;
+		font-size: 18px;
+		margin-bottom: 50px;
 	}
 	.main-text #info h2 {
 		font-size: 1.75em;
@@ -206,23 +224,45 @@ section#home .container:before {
 	}
 }
 
-@media all and (min-device-height: 991px) and (orientation: portrait) {
-	.main-image img {
-		width: 70%;
-    	left: 0;
+
+@media all and (max-device-width: 991px) and (orientation: landscape) {
+	section#home .container {
+		background-size: 120%;
+		background-position: 15% bottom;
 	}
-	.main-text #info {
-		font-size: 2rem;
+	.main-image img {
+		width: 300px;
+		height: auto;
+	}
+	.main-text #info {	
+		font-size: 13px;
+		margin-bottom: 15px;
 	}
 	.main-text #info h1 {
-		font-size: 10rem;
+		font-size: 5rem;
 	}
-	section#home .container {	
-		background-size: cover;
-		background-position: 15% top;
+	.main-text #info h2 {
+		font-size: 1.75em;
+		line-height: 1.25;
+		padding-right: 4vw;
 	}
 }
 
+
+@media all and (max-device-width: 840px) and (orientation: landscape) {	
+	.main-image img {
+		width: 274px;
+		height: auto;
+		margin-left: -7vw;
+	}
+	.main-text #info {
+		font-size: 11px;
+		margin-top: 10px;
+	}
+	.main-text #info h2 {
+		padding-right: 0;
+	}
+}
 
 @media all and (max-device-width: 840px) and (orientation: portrait) {
 	section#home .container {	
@@ -230,106 +270,96 @@ section#home .container:before {
 		background-position: 15% top;
 	}
 	.main-image img {
-		width: 70%;
-    	left: 0;
-	}	
-	.main-text #info {		
-		padding: 0 4vw;
-		font-size: 18px;
-		top: 0;
-    	bottom: 2vw;
-	}
-	.main-text #info h1 {
-    	font-size: 7rem;
-	}
-}
-
-
-@media all and (max-device-width: 690px) and (orientation: landscape) {
-	.main-image img {
-		left: -4vw;
-	}
-	.main-text #info {
-		font-size: 11px;
-		margin-top: 10px;
-	}
-}
-
-
-@media all and (max-device-width: 557px) and (orientation: portrait) {
-	section#home .container {
-		padding-top: 50px;
-	}
-	.main-text #info {
-		font-size: 1.2rem;
-		top: 0;
-		bottom: unset;
-	}
-	.main-text #info h1 {
-	    font-size: 5rem;
-	}
-	.main-text #info h2 {
-		font-size: 1.74em;
-	}
-	.main-text #info h3 {
-		padding: 0 15vw;
-    	text-align: start;
-    	margin-top: 20px;
-	}	
-}
-
-
-@media all and (max-device-width: 480px) {	
-	.main-image img {
-		width: 88%;
+		width: 580px;
 		height: auto;
-		left: 0;
+		margin-top: -30px;
 	}
 	.main-text #info {
-		font-size: 1.07rem;
+		font-size: 16px;
+		padding: 0 10px	;
 	}
-	.main-text #info h2 {
+	.main-text #info p {
 		font-size: 1.7em;
 	}
-}
-
-
-@media all and (max-device-width: 320px) {
 	.main-text #info h1 {
-    	font-size: 4.42rem;
+		font-size: 7rem;
 	}
 	.main-text #info h2 {
-    	font-size: 1.5em;
+		font-size: 2em;
+	}
+	.main-text #info h3 {
+		font-size: 1.75em;
 	}
 }
 
-@media all and (max-device-height: 360px) and (orientation: landscape) {
+
+@media all and (max-device-width: 557px) and (orientation: portrait) {	
+	section#home .container {
+		padding-top: 15px;
+	}
+	.main-image img {
+		width: 460px;
+		height: auto;
+	}
+	.main-text #info {
+		font-size: 13px;
+		padding: 0 5px;
+	}
+	.main-text #info h1 {
+		font-size: 5.4rem;
+	}
+}
+
+@media all and (max-device-width: 390px) and (orientation: portrait) {	
 	.main-image img {
 		width: 320px;
+		height: auto;
 	}
-	.main-text {
-		top: -15px;
+	.main-text #info p {
+		font-size: 1.45em;
+	}
+	.main-text #info h1 {
+		font-size: 4.75rem;
 	}
 	.main-text #info h2 {
-		font-size: 1.5rem;;
+		font-size: 1.7rem;
+	}
+	.main-text #info h3 {
+		font-size: 1.5rem;
 	}
 }
 
-@media all and (max-device-height: 320px) and (orientation: landscape) {
-	.main-image img {
-		width: 250px;
-		left: 0;
+@media all and (max-device-width: 320px) and (orientation: portrait) {	
+	.main-text #info {
+		font-size: 11px;
+		padding: 0;
 	}
-	.main-text {
-		top: -40px;
+	.main-text #info p {
+		font-size: 1.25em;
 	}
 	.main-text #info h1 {
 		font-size: 4rem;
 	}
 	.main-text #info h2 {
-		font-size: 1.25rem;
+		font-size: 1.5rem;
+		letter-spacing: -0.8px;
+		text-align: justify;
 	}
-	.main-text #info > h3 {
-		font-size: 1.15rem;
+	.main-text #info h3 {
+		font-size: 1.33rem;
+	}
+
+}
+
+@media all and (max-device-height: 320px) {
+	.main-image img {
+		width: 240px;
+		height: auto;
+	}	
+	.main-text #info h1 {
+		font-size: 4rem;
+	}
+	.main-text #info h2 {
+		font-size: 1.65em;
 	}
 }
