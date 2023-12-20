@@ -41,7 +41,6 @@
 .navbar .navbar-collapse {
 	display: flex;
 	justify-content: right;	
-	padding-right: 12.5%;
 }
 .navbar .navbar-collapse .menu {
 	display: inline-flex;
@@ -52,7 +51,12 @@
 }
 .navbar .navbar-collapse .menu li a {
 	font-size: 1.15rem;
+	color: #ddd;
 }
+.navbar .navbar-collapse .menu li a:hover {
+	color: #b0b5b8;
+}
+
 
 .header-slide {
 	position: fixed;
@@ -61,7 +65,9 @@
 }
 
 
-@media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (max-width: 840px) {		
+
+
+@media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (max-width: 768px) {		
 	.navbar .logo {
 		width: max-content;
 		height: 60px;
@@ -119,19 +125,43 @@
 	}	
 }
 
-@media all and (min-width: 841px) {
+
+
+
+@media all and (min-width: 992px) {
+	.navbar .navbar-collapse {
+		padding-right: 6.5%;
+	}
 	.navbar .navbar-collapse .menu li a {
-		font-size: 1.15rem;
+		font-size: 1.25rem;
 	}
 }
 
+@media all and (min-width: 1115px){
+	.navbar .navbar-collapse {
+		padding-right: 12.5%;
+	}
+}
 
+@media all and (min-width: 1367px){
+	.navbar .navbar-collapse .menu li a {
+		font-size: 1.33rem;
+	}
+}
+
+@media all and (min-width: 1601px){
+	.navbar .navbar-collapse .menu li a {
+		font-size: 1.75rem;
+	}
+}
+
+/*
 @media all and (max-device-width: 1115px) {
 	.navbar .navbar-collapse .menu li a {
-		font-size: 2rem;
+		font-size: 21rem;
 	}
 }
-
+*/
 
 @media all and (max-device-width: 739px) {
 	.navbar {
