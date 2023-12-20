@@ -25,7 +25,7 @@ body {
   background: #151f20;
   overflow-x: hidden;
 }
-
+/*
 @media (min-width: 2049px) {
   body {
     max-width: 1920px;
@@ -42,7 +42,7 @@ body {
   .container {
     clip-path: inset(0);
   }
-}
+}*/
 
 @media (min-width: 768px) {
   body {      
@@ -108,13 +108,6 @@ i {
 
 .scrolling-no {
   overflow-y: hidden;
-}
-
-
-@media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .touch-none {
-	overflow-y: hidden;
-  }
 }
 
 /* animations adicionais */
@@ -187,7 +180,6 @@ i {
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
-    height: 100%;
     position: relative;
 }
 
@@ -244,7 +236,7 @@ i {
     position: relative;
 }
 
-@media all and (min-width: 841px) {
+@media all and (min-width: 992px) {
   .col-md {
     flex-basis: 0;
     flex-grow: 1;
