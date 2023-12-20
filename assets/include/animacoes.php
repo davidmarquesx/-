@@ -7,9 +7,6 @@
              Com os novos recursos da linguagem CSS3 para os navegadores web, podemos utilizar elementos complexos para desenvolvimento e aperfeiçoamentos gráficos de perspectiva, transformação e rotação de objetos.
              </span>
             </p>
-            <p class="align-center">
-                <button class="btn">Ver Código</button>
-            </p>
         </div>
         <div class="col-md-6"> 
             <div id="drawning_css">   
@@ -83,7 +80,7 @@
            <!-- <img class="ms-explorer" src="assets/img/base/screen_aquamask.jpg" width="100%" height="auto"> -->
             <script src="assets/js/src_animate/aquamask.js"></script>
             </div>
-            <div class="caption align-center"> Passe o cursor sobre a imagem para ver o efeito </div>                
+            <dt class="caption align-center"> Passe o cursor sobre a imagem para ver o efeito </dt>                
         </div>
         <div class="col-md-4">
             <div id="platform" class="source-animate">               
@@ -103,14 +100,13 @@
                 </div>
                 <script src="assets/js/src_animate/platform.js"></script>
             </div>
-            <div class="caption align-center"> Clique na alavanca para abrir ou fechar o buraco </div>
+            <dt class="caption align-center"> Clique na alavanca para abrir ou fechar o buraco </dt>
         </div>       
         <div class="col-md-4">
             <div id="frog" class="source-animate">
-                 <img src="assets/img/frog/elm-normal.png" id="image" />
-                 <div id="avatar" class="auto-center">
-                <!-- <img src="assets/img/frog/elm-normal.png"> -->
-                </div> 
+                <!-- <img src="assets/img/frog/elm-normal.png" id="image" />-->
+                <div id="avatar" class="auto-center">
+                </div>
                 <div id="relva">
                     <div class="content">
                         <span></span>
@@ -138,10 +134,7 @@
                 </div>
                 <script src="assets/js/src_animate/frog.js"></script>
             </div> 
-            <div class="caption align-center"> 
-                <dt>Faça o sapo olhar para a mosca ao passar o cursor no cenário </dt>
-                <dt style="display: none"> Para o sapo olhar pressione em algum local do cenário </dt>
-            </div>
+            <dt class="caption align-center"> Faça o sapo olhar para a mosca ao passar o cursor no cenário </dt>
         </div>
         <div class="col-md-4"> 
             <div id="cube3D" class="source-animate">
@@ -170,7 +163,7 @@
                 </div>
                 <script src="assets/js/src_animate/cube3D.js"></script>               
             </div>
-            <div class="caption align-center"> Clique nos botões para girar o cubo </div>                    
+            <dt class="caption align-center"> Clique nos botões para girar o cubo </dt>                    
         </div>
         <div class="col-md-4"> 
             <div id="tomato" class="source-animate">
@@ -211,11 +204,11 @@
                 <button class="btn" id="path7">Reset</button>
                 <script src="assets/js/src_animate/tomato.js"></script>
             </div> 
-            <div class="caption align-center">                
+            <dt class="caption align-left">                 
                 1- Escolha uma miniatura ao lado, arraste-a até a boca e solte. <br>
                 2- Mova os olhos para qualquer posição. <br>
                 3- Clique no botão para voltar ao normal.               
-            </div>            
+            </dt>            
         </div>
         <div class="col-md-4">
             <div id="the_game" class="source-animate">          
@@ -248,21 +241,21 @@
                </div>
                <script src="assets/js/src_animate/the_game.js"></script>
             </div>
-            <div class="caption align-center"> 
+            <dt class="caption align-center"> 
                 Clique no cenário acima e utilize os comandos a seguir:
-                <dt>
+                <blockquote>
                     Mover - use as teclas <span>A</span> ou <span>D</span>. <br>
                     Pulo - use a tecla <span>L</span><br>
                     Escalar - pulo + tecla <span>W</span> <br>
                     Descer - pulo + tecla <span>S</span> <br>
-                </dt>
-                <dt style="display:none;">
+                </blockquote>
+                <blockquote style="display:none;">
                     Mover - direcionais <span>Esquerda</span> ou <span>Direita</span>. <br>
                     Pulo - pressione o botão <span>O</span> <br>
                     Escalar - pulo + direcional <span>Cima<span> <br>
                     Descer - pulo + direcional <span>Baixo</span> <br>
-                </dt>
-            </div>  
+                </blockquote>
+            </dt>  
         </div>   
     </div>
 </div>
@@ -270,16 +263,6 @@
    $('.source-animate').on('contextmenu', function(e){
         e.preventDefault();
     }, false)
-    
-     $('.source-animate').on('pointerdown', function(){
-        $('body').addClass('touch-none')
-    })
-    
-    $('.source-animate').on('pointerout', function(){
-        $('body').removeClass('touch-none')
-    })
-    
-
 </script>
 
 
