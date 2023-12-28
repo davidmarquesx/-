@@ -1,7 +1,7 @@
 <div class="container">
    <div class="row">
         <div class="main-image col-md-6">
-            <img src="assets/img/base/me1.png" alt="davidmarquesx"/> 
+           <!-- <image > -->
         </div>
         <div class="main-text col-md-6">
             <div id="info">
