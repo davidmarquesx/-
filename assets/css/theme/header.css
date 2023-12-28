@@ -37,6 +37,7 @@
 }
 .navbar .navbar-toggle .btn {
 	cursor: pointer;
+	color: #fff;
 }
 .navbar .navbar-collapse {
 	display: flex;
@@ -121,7 +122,7 @@
 		padding: 20px;
 	}
 	.navbar .navbar-collapse .menu li:hover {
-		background: #16222a;
+		background: #2f3547
 	}	
 }
 
