@@ -4,6 +4,7 @@ footer {
   position: relative; 
   padding-top: 15px;
   border-top: 1px solid rgb(170 204 204 / 18%);
+  background: url('../../img/base/xadrez.jpg');
   display: none;
   float: left;
 }
@@ -22,7 +23,7 @@ footer span {
 }
 footer #contact {
   padding-left: 16.6%;
-  border-right: 1px solid rgb(170 204 204 / 18%);
+  border-right: 1px solid rgb(170 204 204 / 18%);  
 }
 footer #contact .icon {  
   width: 36px;
@@ -52,7 +53,7 @@ footer #copyright {
   padding: 7px 0;
   margin-top: 20px;  
   font-size: 13px; 
-  background: rgba(0,0,0,.8);
+  background: #151f20;
 }
 footer.color-light {
   background: #d2d8dd;
