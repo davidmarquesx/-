@@ -177,6 +177,9 @@ section#home .container:before {
 }
 
 @media all and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 1115px) {
+	section#home .container:before {
+		opacity: .44;
+	}
 	.main-text {
 		align-items: end;
 	}
