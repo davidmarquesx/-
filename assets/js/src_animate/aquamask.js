@@ -1,4 +1,4 @@
-
+/*
 var imageElement = document.querySelector('#aquamask svg:first-child');
 var maskedElement = document.querySelector('#aquamask #mask-circle');
 var svgPoint = imageElement.createSVGPoint();
@@ -22,3 +22,29 @@ document.querySelector('#aquamask').addEventListener('pointermove', function(aqu
 $('#aquamask').on('pointerleave', function(){
      $('#aquamask svg:nth-child(2)').css('opacity','0')
 });
+*/
+
+
+var imageElement = document.querySelector('#aquamask svg:first-child');
+var maskedElement = document.querySelector('#aquamask #mask-circle');
+var svgPoint = imageElement.createSVGPoint();
+
+        function cursorPoint(aqua, svg) {
+            svgPoint.x = aqua.clientX;
+            svgPoint.y = aqua.clientY;
+            return svgPoint.matrixTransform(svg.getScreenCTM().inverse());
+        }
+        function update(svgCoords) {
+            maskedElement.setAttribute('cx', svgCoords.x);
+            maskedElement.setAttribute('cy', svgCoords.y);
+        }
+        document.querySelector('#aquamask').addEventListener('pointermove', function(aqua) {
+            $(maskedElement).removeClass('aquamaskMove'); $('#aquamask svg:nth-child(2)').css('opacity','1').addClass('bubble');
+            update(cursorPoint(aqua, imageElement));   
+
+            setTimeout(maskStop, 1000); 
+        }, false);
+
+        function maskStop() {
+            $('#aquamask svg:nth-child(2)').removeClass('bubble');
+        }

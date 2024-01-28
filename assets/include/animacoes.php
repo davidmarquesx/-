@@ -65,18 +65,17 @@
         <div class="col-md-4">
             <div id="aquamask" class="source-animate">        
                 <svg>
-                   <image xlink:href="assets/img/base/brush_golden.jpg" /> 
+                   <image id="primary" xlink:href="assets/img/base/village.png" alt="Digital-Graphic-Of-Village-Scenery-Landscape" /> 
                 </svg> 
                 <svg> 
-                    <defs>
                         <clipPath id="cursor">
                             <circle id="mask-circle" cx="0" cy="0" r="15%" />
                         </clipPath>
-                    </defs>
+                    
                     <g clip-path="url(#cursor)">
-                        <image xlink:href="assets/img/base/brush_night.jpg"/>
+                        <image id="clip" xlink:href="assets/img/base/village.png" alt="Digital-Graphic-Of-Village-Scenery-Landscape" />
                     </g>
-                </svg>    
+                </svg>      
            <!-- <img class="ms-explorer" src="assets/img/base/screen_aquamask.jpg" width="100%" height="auto"> -->
             <script src="assets/js/src_animate/aquamask.js"></script>
             </div>
