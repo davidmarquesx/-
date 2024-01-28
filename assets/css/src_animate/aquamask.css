@@ -53,7 +53,7 @@
 @keyframes bubble {
     50% { transform: scale(1.05); filter: blur(1px); }
 }
-
+/*
 .aquamaskMove {     
     position: relative;
     animation: aquamaskMove 24s 2s infinite !important;
@@ -79,7 +79,7 @@
     50% { transform: scale(1.05) translate(-4%); }
     100% { transform: scale(1); }
 }
-
+*/
 #aquamask .ms-explorer {
     display: none;
 }
