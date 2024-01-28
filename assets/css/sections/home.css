@@ -139,6 +139,10 @@ section#home .container {
 }
 
 @media all and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+	section#home:before {		
+		background-position: -75px 100px;
+		background-color: #071c25;
+	}
 	section#home .container {
 		padding: 60px 15px 0;
 	}	
