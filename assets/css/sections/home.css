@@ -10,17 +10,25 @@ section#home:before {
 	background: url('../../img/base/fundo.jpg') no-repeat;
 	background-size: cover;
 	background-position: bottom center;
-	padding-bottom: 0;
 }
 
 section#home .container {
 	padding-bottom: 0;
 	height: 100vh;	
 }
+section#home .container:before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to left, rgba(96, 125, 139, 0.15), transparent);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
 
 .main-text {
 	display: flex;
-	align-items: center;
+	align-items: end;	
 	position: relative;
 }
 .main-text #info {
@@ -47,7 +55,7 @@ section#home .container {
 }
 .main-text #info h2 {
 	font-size: 2em;
-    	font-weight: 100;
+    font-weight: 100;
 	line-height: unset;  		
 }
 .main-text #info h2 strong {
@@ -66,10 +74,6 @@ section#home .container {
 		max-width: 50%;
     		flex: 0 0 50%;
 	}
-	.main-image img {	
-		width: 456px;
-		height: auto;
-	}
 	.main-text #info {
 		font-size: 14px;	
 	}
@@ -78,9 +82,11 @@ section#home .container {
 	}	
 }
 
-@media all and (min-width: 1200px){
+
+@media all and (min-width: 1201px){	
 	.main-text #info {
 		font-size: 16px;
+		margin-bottom: 50px;
 	}
 	.main-text #info > h1 {
 		font-size: 7rem;
@@ -92,10 +98,12 @@ section#home .container {
 }
 
 
-@media all and (min-width: 1367px){
+@media all and (min-width: 1401px){
+	.main-text {
+		align-items: center;
+	}
 	.main-text #info {
 		font-size: 22px;
-		margin-top: 50px;
 	}
 	.main-text #info > h1 {
 		font-size: 8rem;
@@ -128,6 +136,8 @@ section#home .container {
 	}
 }
 
+
+
 @media all and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (max-width: 768px) {
 	section#home .container {
 		padding: 0 30px;
@@ -140,18 +150,26 @@ section#home .container {
 
 @media all and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 	section#home:before {		
-		background-position: -75px 100px;
-		background-color: #071c25;
+		background: url('../../img/base/fundo_portrait1.jpg') no-repeat #071c25;
+		background-size: cover;
+    	background-position-x: center;
+    	background-position-y: 50%;
 	}
 	section#home .container {
-		padding: 50px 15px 0;
-	}	
+		padding: 20px 15px 0;
+	}
+	section#home .container:before {
+		background: linear-gradient(to bottom, rgba(96, 125, 139, 0.15), transparent);
+	}
 	.main-image, .main-text {
 		max-width: 100%;
     		flex: 0 0 100%;
 	}
 	.main-image {
 		display: none;
+	}
+	.main-text {
+		align-items: baseline;
 	}
 	.main-text #info h3 {
 		font-size: 1.54em;
@@ -160,13 +178,8 @@ section#home .container {
 	}
 }
 
+
 @media all and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 1115px) {
-	section#home .container:before {
-		opacity: .44;
-	}
-	.main-text {
-		align-items: end;
-	}
 	.main-text #info {
 		font-size: 18px;
 		margin-bottom: 50px;
@@ -177,27 +190,36 @@ section#home .container {
 	}
 }
 
-@media all and (max-device-width: 991px) and (orientation: landscape) {
+
+@media all and (max-device-width: 991px) and (orientation: landscape) {	
 	.main-text #info {	
 		font-size: 13px;
-		margin-bottom: 15px;
+		margin-bottom: 30px;	
 	}
 	.main-text #info h1 {
 		font-size: 5rem;
 	}
 }
 
-@media all and (max-device-width: 840px) and (orientation: landscape) {	
+
+@media all and (max-device-width: 800px) and (orientation: landscape) {		
+	section#home:before {
+		width: 120%;
+		height: 100%;
+		background-position-x: -7.5vw;
+	}	
+}
+
+
+@media all and (max-device-width: 690px) and (orientation: landscape){
 	.main-text #info {
 		font-size: 11px;
-		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 }
 
-@media all and (max-device-width: 840px) and (orientation: portrait) {
-	.main-text {
-		align-items: baseline;
-	}
+
+@media all and (max-device-width: 1024px) and (orientation: portrait) {	
 	.main-text #info {
 		font-size: 16px;
 		padding: 0 10px	;
@@ -218,6 +240,9 @@ section#home .container {
 
 
 @media all and (max-device-width: 557px) and (orientation: portrait) {	
+	section#home:before {
+		background-size: 150%;
+	}
 	.main-text #info {
 		font-size: 13px;
 		padding: 0 5px;
@@ -262,6 +287,11 @@ section#home .container {
 }
 
 @media all and (max-device-height: 320px) {
+ 	section#home:before {
+		width: 100%;
+		height: 100%;
+		background-position-x: center;
+	}
 	.main-text #info h1 {
 		font-size: 4rem;
 	}
