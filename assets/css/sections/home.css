@@ -150,7 +150,7 @@ section#home .container:before {
 
 @media all and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 	section#home:before {		
-		background: url('../../img/base/fundo_portrait1.jpg') no-repeat #071c25;
+		background: url('../../img/base/fundo_portrait.jpg') no-repeat #071c25;
 		background-size: cover;
     	background-position-x: center;
     	background-position-y: 50%;
