@@ -8,7 +8,7 @@
              </span>
             </p>
         </div>
-        <div class="col-md-6"> 
+        <div class="col-md-6 auto-center"> 
             <div id="drawning_css">   
                 <div id="puppet">
                     <div id="head">
@@ -69,7 +69,7 @@
                 </svg> 
                 <svg> 
                         <clipPath id="cursor">
-                            <circle id="mask-circle" cx="0" cy="0" r="15%" />
+                            <circle id="mask-circle" class="aquamaskMove" cx="0" cy="0" r="15%" />
                         </clipPath>
                     
                     <g clip-path="url(#cursor)">
@@ -133,7 +133,7 @@
                 </div>
                 <script src="assets/js/src_animate/frog.js"></script>
             </div> 
-            <dt class="caption align-center"> Faça o sapo olhar para a mosca ao passar o cursor no cenário </dt>
+            <dt class="caption align-center"> Faça o sapo olhar quando passar o cursor no cenário </dt>
         </div>
         <div class="col-md-4"> 
             <div id="cube3D" class="source-animate">
@@ -233,9 +233,9 @@
                        <i class="fal fa-square-o btn btn-up"></i>
                        <i class="fal fa-square-o btn btn-down"></i>
                        <i class="fal fa-square-o btn btn-right"></i>
-                   </div>
-                   <div class=" float-r auto-middle">
-                    <i class="fal fa-circle-o btn btn-jump"></i>
+                    </div>
+                    <div class=" float-r auto-middle">
+                        <i class="fal fa-circle-o btn btn-jump"></i>
                     </div>
                </div>
                <script src="assets/js/src_animate/the_game.js"></script>
@@ -263,11 +263,3 @@
         e.preventDefault();
     }, false)
 </script>
-
-
-
-
-
-
-
-
