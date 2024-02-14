@@ -8,7 +8,8 @@
     position: relative;
 }
 #aquamask svg:nth-child(2) { 
-    transform: scale(1.01);
+    transform: scale(1.1);
+    filter: blur(1px);
     position: absolute;
     top: 0;
     opacity: 0;
@@ -18,21 +19,15 @@
     height: auto;
 }
 #aquamask svg #cursor #mask-circle {
-    clip-path: circle(50% at 50% 50%);    
+    clip-path: circle(50% at 50% 50%); 
+    transition: 1s linear;   
 }
 
-.bubble {   
-    animation: bubble .6s linear infinite;
-}
-
-
-@keyframes bubble {
-    50% { transform: scale(1.05); filter: blur(1px); }
-}
 
 .aquamaskMove {     
-    position: relative;
-    animation: aquamaskMove 24s 2s infinite !important;
+    position: relative;   
+    transform: translate(-1%, -1%);
+    animation: aquamaskMove 24s 2s infinite;
 }
     @keyframes aquamaskMove { 
         10% {cx:250;cy:150;}
@@ -45,16 +40,7 @@
         80% {cx:440;cy:150;}
         90% {cx:245;cy:240;}
     }
-/*
-@keyframes inflate {
-    50% { transform: scale(1); }
-}
-*/
-@keyframes aquamask {
-    0% { transform: scale(1) ; }
-    50% { transform: scale(1.05) translate(-4%); }
-    100% { transform: scale(1); }
-}
+
 
 #aquamask .ms-explorer {
     display: none;
