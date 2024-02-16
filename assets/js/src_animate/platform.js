@@ -16,7 +16,7 @@ function trajectory01(){
             if(posY == 150 || posY == 250){
                 posX++; ballMove.style.left = posX + 'px'; 
             }
-            if(posY >= 195){
+            if(posY >= 198){
                 posY = 200;
                 $(ballMove).addClass('stop'); $(colision_R).addClass('break');
             }
@@ -85,4 +85,3 @@ $('#platform button').click(function(){
     (n == 'a')?n = 'b':n = 'a'; 
 
 });
-
