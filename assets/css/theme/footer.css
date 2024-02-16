@@ -12,9 +12,10 @@ footer .icon {
   color: #fff;
   opacity: .6;
   cursor: pointer;
-  transition: opacity .4s;
+  transition: all .4s;
 }
 footer .icon:hover {
+  background: #fff;
   opacity: 1;
 }
 footer span {
@@ -43,6 +44,22 @@ footer #social .icon {
   line-height: 35px;
   margin-right: 4px;
   margin-top: 10px;
+}
+footer #social .icon.fa-whatsapp:hover {
+  color: #00a356;
+}
+footer #social .icon.fa-linkedin:hover {
+  color: #0073b1;
+}
+footer #social .icon.fa-github:hover {
+  color: #9656b0;
+}
+footer #social .icon.fa-instagram:hover {
+  color: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+footer #social .icon.workana img:hover {
+  filter: grayscale(0) brightness(1) !important;
 }
 footer #social span {
   position: absolute;
