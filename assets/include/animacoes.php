@@ -104,8 +104,7 @@
         <div class="col-md-4">
             <div id="frog" class="source-animate">
                 <!-- <img src="assets/img/frog/elm-normal.png" id="image" />-->
-                <div id="avatar" class="auto-center">
-                </div>
+                <div id="avatar" class="auto-center elm-up-left elm-up-middle elm-up-right elm-middle-left elm-middle-middle elm-middle-right elm-down-left elm-down-middle elm-down-right"></div>
                 <div id="relva">
                     <div class="content">
                         <span></span>
