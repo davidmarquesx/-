@@ -49,8 +49,6 @@ var changeFrog = 'elm-up-left elm-up-middle elm-up-right ' +
                  'elm-middle-left elm-middle-middle elm-middle-right ' +
                  'elm-down-left elm-down-middle elm-down-right ';
 
-setTimeout(function(){ $(frog).removeClass(changeFrog); }, 800)             
-
 $('#cursor .mask').on('pointerleave', function(){
     $(frog).removeClass(changeFrog);
 })
