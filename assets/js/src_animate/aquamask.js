@@ -17,6 +17,12 @@ var svgPoint = imageElement.createSVGPoint();
         setTimeout(maskStop, 3000); 
     }, false);
 
+    document.querySelector('#aquamask').addEventListener('touchmove', function(aqua) {
+        $(maskedElement).removeClass('aquamaskMove'); $('#aquamask svg:nth-child(2)').css('opacity','1');
+        update(cursorPoint(aqua, imageElement));
+        setTimeout(maskStop, 3000); 
+    }, false);
+
     function maskStop() {          
         $(maskedElement).addClass('aquamaskMove');
     }
