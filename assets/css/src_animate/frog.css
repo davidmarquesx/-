@@ -12,6 +12,7 @@
     background-repeat: no-repeat !important;
     background-position-y: bottom !important;
     filter: brightness(0.9);
+    transition: all .2s linear;
     position: absolute;
     bottom: 0;
 }
