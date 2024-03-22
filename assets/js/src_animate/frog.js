@@ -49,24 +49,6 @@ var changeFrog = 'elm-up-left elm-up-middle elm-up-right ' +
                  'elm-middle-left elm-middle-middle elm-middle-right ' +
                  'elm-down-left elm-down-middle elm-down-right ';
 
-setTimeout(function(){ $(frog).addClass('elm-up-left') },100);
-setTimeout(function(){ $(frog).addClass('elm-up-middle')  },110);
-setTimeout(function(){ $(frog).addClass('elm-up-right')  },120);
-
-setTimeout(function(){ $(frog).addClass('elm-middle-left')  },130);
-setTimeout(function(){ $(frog).addClass('elm-middle-middle')  },140);
-setTimeout(function(){ $(frog).addClass('elm-middle-right') },150);
-
-setTimeout(function(){ $(frog).addClass('elm-down-left')  },160);
-setTimeout(function(){ $(frog).addClass('elm-down-middle')  },170);
-setTimeout(function(){ $(frog).addClass('elm-down-right')  },180);
-
-setTimeout(function(){ $(frog).removeClass(changeFrog);  },190);
-
-$('#cursor .mask').on('pointerleave', function(){
-    $(frog).removeClass(changeFrog);
-})
-
 $('#cursor .mask.grid-1-1').on('pointerover', function(){ 
     $(frog).addClass('elm-up-left') 
 })
@@ -93,5 +75,8 @@ $('#cursor .mask.grid-3-2').on('pointerover', function(){
 })
 $('#cursor .mask.grid-3-3').on('pointerover', function(){ 
     $(frog).addClass('elm-down-right') 
+})
+$('#cursor .mask').on('pointerleave', function(){
+    $(frog).removeClass(changeFrog);
 })
 
