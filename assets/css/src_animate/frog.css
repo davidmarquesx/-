@@ -16,31 +16,41 @@
     position: absolute;
     bottom: 0;
 }
-#frog #avatar.elm-up-left {
+#frog #avatar:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+    background-position-y: bottom !important;
+}
+#frog #avatar.elm-up-left:before {
     background: url('../../img/frog/elm-up-left.png');
 }
-#frog #avatar.elm-up-middle {
+#frog #avatar.elm-up-middle:before {
     background: url('../../img/frog/elm-up-middle.png');
 }
-#frog #avatar.elm-up-right {
+#frog #avatar.elm-up-right:before {
     background: url('../../img/frog/elm-up-right.png');
 }
-#frog #avatar.elm-middle-left {
+#frog #avatar.elm-middle-left:before {
     background: url('../../img/frog/elm-middle-left.png');
 }
 #frog #avatar.elm-middle-middle {
     background: url('../../img/frog/elm-middle-middle.png');
 }
-#frog #avatar.elm-middle-right {
+#frog #avatar.elm-middle-right:before {
     background: url('../../img/frog/elm-middle-right.png');
 }
-#frog #avatar.elm-down-left {
+#frog #avatar.elm-down-left:before {
     background: url('../../img/frog/elm-down-left.png');
 }
-#frog #avatar.elm-down-middle {
+#frog #avatar.elm-down-middle:before {
     background: url('../../img/frog/elm-down-middle.png');
 }
-#frog #avatar.elm-down-right {
+#frog #avatar.elm-down-right:before {
     background: url('../../img/frog/elm-down-right.png');
 }
 
