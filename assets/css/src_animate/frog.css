@@ -12,7 +12,6 @@
     background-repeat: no-repeat !important;
     background-position-y: bottom !important;
     filter: brightness(0.9);
-    transition: all .2s linear;
     position: absolute;
     bottom: 0;
 }
@@ -25,6 +24,7 @@
     background-size: 100% 100% !important;
     background-repeat: no-repeat !important;
     background-position-y: bottom !important;
+    transition: all .2s linear;
 }
 #frog #avatar.elm-up-left:before {
     background: url('../../img/frog/elm-up-left.png');
@@ -38,7 +38,7 @@
 #frog #avatar.elm-middle-left:before {
     background: url('../../img/frog/elm-middle-left.png');
 }
-#frog #avatar.elm-middle-middle {
+#frog #avatar.elm-middle-middle:before {
     background: url('../../img/frog/elm-middle-middle.png');
 }
 #frog #avatar.elm-middle-right:before {
