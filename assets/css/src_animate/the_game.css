@@ -17,6 +17,7 @@
     background: linear-gradient(180deg, rgba(0,0,0,0) 98%, rgb(91 94 94) 98%);
     position: absolute;
     bottom: 0;
+    left: 0;
     outline: none;
     transition: left .6s ease-in-out;
 }
