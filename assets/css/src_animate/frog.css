@@ -6,7 +6,11 @@
 }
 #frog #avatar  {
     width: 190px;
-    height: 160px;    
+    height: 160px;
+    background: url('../../img/frog/elm-normal.png');
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+    background-position-y: bottom !important;
     filter: brightness(0.9);
     position: absolute;
     bottom: 0;
@@ -19,7 +23,6 @@
     height: 100%;
     position: absolute;
     bottom: 0;
-    background: url('../../img/frog/elm-normal.png');
     background-size: 100% 100% !important;
     background-repeat: no-repeat !important;
     background-position-y: bottom !important;
