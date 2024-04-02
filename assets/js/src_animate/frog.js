@@ -78,9 +78,6 @@ $('#cursor .mask.grid-3-3').on('pointerover', function(){
 })
 
 $('#cursor .mask').on('pointerleave', function(){
-    $(frog).addClass('animate')    
-})
-$('#cursor .mask').on('pointerleave', function(){
-    $(frog).removeClass(changeFrog); $(frog).removeClass('animate') 
+    $(frog).removeClass(changeFrog);
 })
 
