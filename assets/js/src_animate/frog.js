@@ -76,7 +76,11 @@ $('#cursor .mask.grid-3-2').on('pointerover', function(){
 $('#cursor .mask.grid-3-3').on('pointerover', function(){ 
     $(frog).addClass('elm-down-right') 
 })
+
 $('#cursor .mask').on('pointerleave', function(){
-    $(frog).removeClass(changeFrog);
+    $(frog).addClass('animate')    
+})
+$('#cursor .mask').on('pointerleave', function(){
+    $(frog).removeClass(changeFrog); $(frog).removeClass('animate') 
 })
 
