@@ -116,7 +116,8 @@ section#home .container:before {
 
 @media all and (min-width: 1681px) {
 	.main-text #info {
-		font-size: 1.65vw;		
+		font-size: 1.54vw;
+		/*font-size: 1.65vw;	*/	
 	}
 	.main-text #info > h1 {
 		font-size: 7vw;
