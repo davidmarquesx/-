@@ -241,16 +241,16 @@
             <dt class="caption align-center"> 
                 Clique no cenário acima e utilize os comandos a seguir:
                 <blockquote>
-                    Mover - use as teclas <span>A</span> ou <span>D</span>. <br>
-                    Pulo - use a tecla <span>L</span><br>
-                    Escalar - pulo + tecla <span>W</span> <br>
-                    Descer - pulo + tecla <span>S</span> <br>
+                    Mover - use as teclas <b>A</b> ou <b>D</b>. <br>
+                    Pulo - use a tecla <b>L</b><br>
+                    Escalar - pulo + tecla <b>W</b> <br>
+                    Descer - pulo + tecla <b>S</b> <br>
                 </blockquote>
                 <blockquote style="display:none;">
-                    Mover - direcionais <span>Esquerda</span> ou <span>Direita</span>. <br>
-                    Pulo - pressione o botão <span>O</span> <br>
-                    Escalar - pulo + direcional <span>Cima<span> <br>
-                    Descer - pulo + direcional <span>Baixo</span> <br>
+                    Mover - direcionais <b>Esquerda</b> ou <span>Direita</b>. <br>
+                    Pulo - pressione o botão <b>O</b> <br>
+                    Escalar - pulo + direcional <b>Cima</b> <br>
+                    Descer - pulo + direcional <b>Baixo</b> <br>
                 </blockquote>
             </dt>  
         </div>   
