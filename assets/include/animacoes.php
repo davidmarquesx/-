@@ -79,7 +79,7 @@
            <!-- <img class="ms-explorer" src="assets/img/base/screen_aquamask.jpg" width="100%" height="auto"> -->
             <script src="assets/js/src_animate/aquamask.js"></script>
             </div>
-            <dt class="caption align-center"> Passe o cursor sobre a imagem para ver o efeito </dt>                
+            <dt class="caption align-center"> <span>Passe o mouse </span> <span>Toque</span>sobre a imagem para ver o efeito </dt>                
         </div>
         <div class="col-md-4">
             <div id="platform" class="source-animate">               
@@ -131,7 +131,7 @@
                 </div>
                 <script src="assets/js/src_animate/frog.js"></script>
             </div> 
-            <dt class="caption align-center"> Faça o sapo olhar quando passar o cursor no cenário </dt>
+            <dt class="caption align-center"> Faça o sapo olhar quando passar <span>o mouse</span> <span style="display:none">tocar</span> no cenário </dt>
         </div>
         <div class="col-md-4"> 
             <div id="cube3D" class="source-animate">
