@@ -79,7 +79,7 @@
            <!-- <img class="ms-explorer" src="assets/img/base/screen_aquamask.jpg" width="100%" height="auto"> -->
             <script src="assets/js/src_animate/aquamask.js"></script>
             </div>
-            <dt class="caption align-center"> <span>Passe o mouse </span> <span>Toque</span>sobre a imagem para ver o efeito </dt>                
+            <dt class="caption align-center"> <span>Passe o mouse </span> <span style="display:none">Toque</span> sobre a imagem para ver o efeito </dt>                
         </div>
         <div class="col-md-4">
             <div id="platform" class="source-animate">               
@@ -131,7 +131,7 @@
                 </div>
                 <script src="assets/js/src_animate/frog.js"></script>
             </div> 
-            <dt class="caption align-center"> Faça o sapo olhar quando passar <span>o mouse</span> <span style="display:none">tocar</span> no cenário </dt>
+            <dt class="caption align-center"> Faça o sapo olhar quando passar <span>o mouse</span> <span style="display:none"> tocar</span> no cenário </dt>
         </div>
         <div class="col-md-4"> 
             <div id="cube3D" class="source-animate">
@@ -248,7 +248,7 @@
                 </blockquote>
                 <blockquote style="display:none;">
                     Mover - direcionais Esquerda ou Direita. <br>
-                    Pulo - pressione o botão O <br>
+                    Pulo - pressione o botão <b>O</b> <br>
                     Escalar - pulo + direcional Cima <br>
                     Descer - pulo + direcional Baixo <br>
                 </blockquote>
