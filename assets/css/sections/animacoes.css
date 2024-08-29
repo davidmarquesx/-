@@ -49,10 +49,10 @@ section#animacoes .caption dt span {
 
 
 @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    section#animacoes .caption dt:first-child {
+    section#animacoes .caption span:first-child {
         display: none;
     }
-    section#animacoes .caption dt:last-child {
+    section#animacoes .caption span:last-child {
         display: block !important;
     }
 }
