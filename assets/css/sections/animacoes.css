@@ -53,7 +53,7 @@ section#animacoes .caption dt span {
         display: none;
     }
     section#animacoes .caption span:last-child {
-        display: block !important;
+        display: inline !important;
     }
 }
 
